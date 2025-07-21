@@ -4,7 +4,7 @@
 interface AnalyticsEvent {
   event: string
   timestamp: number
-  data?: Record<string, any>
+  data?: Record<string, unknown>
 }
 
 class SimpleAnalytics {
@@ -39,7 +39,7 @@ class SimpleAnalytics {
     }
   }
 
-  track(event: string, data?: Record<string, any>): void {
+  track(event: string, data?: Record<string, unknown>): void {
     const analyticsEvent: AnalyticsEvent = {
       event,
       timestamp: Date.now(),
@@ -133,7 +133,7 @@ export const analytics = new SimpleAnalytics()
 
 // Convenience tracking functions
 export const trackScanStarted = () => analytics.track('scan_started')
-export const trackScanCompleted = (result: string, checksData?: any) => 
+export const trackScanCompleted = (result: string, checksData?: unknown) => 
   analytics.track('scan_completed', { result, checksData })
 export const trackShowDetails = () => analytics.track('show_details_clicked')
 export const trackShowEducation = () => analytics.track('show_education_clicked')
