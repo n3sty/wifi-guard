@@ -88,7 +88,7 @@ class SimpleAnalytics {
       switch (event.event) {
         case 'scan_completed':
           totalScans++
-          const result = event.data?.result || 'unknown'
+          const result = typeof event.data?.result === 'string' ? event.data.result : 'unknown'
           scanResults[result] = (scanResults[result] || 0) + 1
           break
         case 'show_details_clicked':
