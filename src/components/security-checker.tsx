@@ -34,7 +34,7 @@ export default function SecurityChecker() {
   };
 
   return (
-    <div className="min-h-screen bg-white text-gray-900 px-6 flex flex-col">
+    <div className="min-h-screen bg-white text-gray-900 px-2 sm:px-4 md:px-6 flex flex-col">
       <div className="max-w-2xl mx-auto w-full">
         {/* Contained Header */}
         <header className="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-4 sm:gap-0 mb-12 pt-8">
