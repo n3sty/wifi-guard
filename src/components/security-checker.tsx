@@ -2,6 +2,7 @@
 
 import { useState, useEffect } from "react";
 import { motion, AnimatePresence } from "framer-motion";
+import { ShieldCheck, ShieldCheckIcon, Wifi, WifiPen } from "lucide-react";
 import {
   trackScanStarted,
   trackScanCompleted,
@@ -465,20 +466,8 @@ export default function SecurityChecker() {
         <header className="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-4 sm:gap-0 mb-12 pt-8">
           <div className="flex flex-row items-center space-x-3 justify-center sm:justify-start">
             {/* Logo */}
-            <div className="w-12 h-12 bg-blue-600 rounded-xl flex items-center justify-center shadow-sm">
-              <svg
-                className="w-6 h-6 text-white"
-                fill="none"
-                stroke="currentColor"
-                viewBox="0 0 24 24"
-              >
-                <path
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                  strokeWidth={2.5}
-                  d="M9 12l2 2 4-4"
-                />
-              </svg>
+            <div className="!size-10 bg-blue-600 rounded-xl flex items-center justify-center shadow-sm">
+              <ShieldCheckIcon className="!size-6 text-white" />
             </div>
             {/* Brand */}
             <div>
@@ -490,11 +479,11 @@ export default function SecurityChecker() {
           </div>
 
           {/* Action Button */}
-          <div className="flex flex-row items-center space-x-3 justify-center sm:justify-end">
+          {/* <div className="flex flex-row items-center space-x-3 justify-center sm:justify-end">
             <button className="px-4 py-2.5 bg-white border border-gray-200 text-gray-700 rounded-lg hover:bg-gray-50 transition-colors font-medium text-sm shadow-sm">
               Get Pro
             </button>
-          </div>
+          </div> */}
         </header>
 
         {/* Main Content Area - Centered */}
@@ -833,7 +822,7 @@ export default function SecurityChecker() {
                               </svg>
                             </motion.button>
                             <div className="flex items-center space-x-3">
-                              <div className="w-10 h-10 rounded-lg bg-blue-100 flex items-center justify-center">
+                              <div className="!size-10 rounded-lg bg-blue-100 flex items-center justify-center">
                                 <svg
                                   className="w-5 h-5 text-blue-600"
                                   fill="none"
