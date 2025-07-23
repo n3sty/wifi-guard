@@ -1,7 +1,8 @@
 "use client";
 
-import { motion } from "framer-motion";
 import { SecurityCheck } from "@/types/security";
+import { motion } from "framer-motion";
+import { ArrowLeftIcon, FileSliders } from "lucide-react";
 import { CheckIcon } from "./CheckIcon";
 
 interface TechnicalDetailsProps {
@@ -24,34 +25,27 @@ export function TechnicalDetails({ checks, onBack }: TechnicalDetailsProps) {
     >
       {/* Header with Back Button */}
       <motion.div
-        className="flex items-center mb-6"
+        className="flex items-center mb-6 gap-2"
         initial={{ opacity: 0, y: -20 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ delay: 0.2 }}
       >
         <motion.button
           onClick={onBack}
-          className="mr-4 p-2 rounded-lg hover:bg-gray-100 transition-colors"
+          className="rounded-lg hover:bg-gray-100 transition-colors flex items-center justify-center"
           whileHover={{ scale: 1.05 }}
           whileTap={{ scale: 0.95 }}
         >
-          <svg
-            className="w-5 h-5 text-gray-600"
-            fill="none"
-            stroke="currentColor"
-            viewBox="0 0 24 24"
-          >
-            <path
-              strokeLinecap="round"
-              strokeLinejoin="round"
-              strokeWidth={2}
-              d="M15 19l-7-7 7-7"
-            />
-          </svg>
+          <ArrowLeftIcon className="!size-5 text-gray-600" />
         </motion.button>
-        <h3 className="text-gray-900 font-bold text-xl">
-          Technical Analysis
-        </h3>
+        <div className="flex items-center space-x-3">
+          <div className="!size-10 rounded-lg bg-blue-100 flex items-center justify-center">
+            <FileSliders className="!size-6 text-blue-600" />
+          </div>
+          <h3 className="text-gray-900 font-bold text-xl">
+            Technical Analysis
+          </h3>
+        </div>
       </motion.div>
 
       {checks.map((check, index) => (
@@ -88,9 +82,7 @@ export function TechnicalDetails({ checks, onBack }: TechnicalDetailsProps) {
                   {check.status.toUpperCase()}
                 </span>
               </div>
-              <p className="text-gray-700 font-medium mb-3">
-                {check.message}
-              </p>
+              <p className="text-gray-700 font-medium mb-3">{check.message}</p>
 
               {check.details && (
                 <motion.div

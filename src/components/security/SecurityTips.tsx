@@ -4,6 +4,7 @@ import { motion, AnimatePresence } from "framer-motion";
 import { SecurityCheck, OverallStatus } from "@/types/security";
 import { useNetworkInfo } from "@/hooks/useNetworkInfo";
 import { useState } from "react";
+import { ArrowLeftIcon, InfoIcon } from "lucide-react";
 
 interface SecurityTipsProps {
   overallStatus: OverallStatus;
@@ -16,28 +17,32 @@ interface TipWithPriority {
   priority: "critical" | "important" | "general" | "optional";
 }
 
-export function SecurityTips({ overallStatus, checks, onBack }: SecurityTipsProps) {
+export function SecurityTips({
+  overallStatus,
+  checks,
+  onBack,
+}: SecurityTipsProps) {
   const networkInfo = useNetworkInfo();
   const [showMoreTips, setShowMoreTips] = useState(false);
 
   const getContextSpecificTips = (): TipWithPriority[] => {
     const tips: TipWithPriority[] = [];
-    
+
     // Add tips based on specific failed/warning checks
-    checks.forEach(check => {
+    checks.forEach((check) => {
       if (check.status === "failed" || check.status === "warning") {
         const priority = check.status === "failed" ? "critical" : "important";
-        
+
         switch (check.id) {
           case "https-check":
             if (check.status === "failed") {
               tips.push({
                 text: "Switch to HTTPS websites whenever possible - look for the lock icon in your browser",
-                priority
+                priority,
               });
               tips.push({
                 text: "Avoid entering passwords or personal information on HTTP sites",
-                priority
+                priority,
               });
             }
             break;
@@ -45,7 +50,7 @@ export function SecurityTips({ overallStatus, checks, onBack }: SecurityTipsProp
             if (check.status === "warning") {
               tips.push({
                 text: "Slow network performance detected - consider switching networks for better security",
-                priority
+                priority,
               });
             }
             break;
@@ -53,11 +58,11 @@ export function SecurityTips({ overallStatus, checks, onBack }: SecurityTipsProp
             if (check.status === "failed") {
               tips.push({
                 text: "SSL certificate issues detected - avoid banking and financial transactions",
-                priority
+                priority,
               });
               tips.push({
                 text: "Consider using mobile data instead of this WiFi network",
-                priority
+                priority,
               });
             }
             break;
@@ -69,12 +74,12 @@ export function SecurityTips({ overallStatus, checks, onBack }: SecurityTipsProp
     if (networkInfo.isCellular) {
       tips.push({
         text: "You're on cellular data - generally more secure than public WiFi",
-        priority: "general"
+        priority: "general",
       });
     } else if (networkInfo.isWiFi) {
       tips.push({
         text: "Verify this WiFi network name with venue staff to avoid fake hotspots",
-        priority: "important"
+        priority: "important",
       });
     }
 
@@ -87,27 +92,63 @@ export function SecurityTips({ overallStatus, checks, onBack }: SecurityTipsProp
     switch (overallStatus) {
       case "safe":
         tips.push(
-          { text: "Safe to access banking and financial services", priority: "general" },
-          { text: "Secure for entering passwords and personal data", priority: "general" },
-          { text: "Protected against common WiFi security threats", priority: "optional" },
+          {
+            text: "Safe to access banking and financial services",
+            priority: "general",
+          },
+          {
+            text: "Secure for entering passwords and personal data",
+            priority: "general",
+          },
+          {
+            text: "Protected against common WiFi security threats",
+            priority: "optional",
+          },
           { text: "Continue browsing with confidence", priority: "optional" }
         );
         break;
       case "caution":
         tips.push(
-          { text: "Avoid online banking and payment processing", priority: "important" },
-          { text: "Do not enter passwords for critical accounts", priority: "important" },
-          { text: "Consider using mobile data for sensitive tasks", priority: "general" },
-          { text: "Verify network legitimacy with venue staff", priority: "general" },
-          { text: "Be extra cautious with file downloads", priority: "optional" }
+          {
+            text: "Avoid online banking and payment processing",
+            priority: "important",
+          },
+          {
+            text: "Do not enter passwords for critical accounts",
+            priority: "important",
+          },
+          {
+            text: "Consider using mobile data for sensitive tasks",
+            priority: "general",
+          },
+          {
+            text: "Verify network legitimacy with venue staff",
+            priority: "general",
+          },
+          {
+            text: "Be extra cautious with file downloads",
+            priority: "optional",
+          }
         );
         break;
       case "danger":
         tips.push(
-          { text: "Disconnect from this network immediately", priority: "critical" },
-          { text: "Switch to mobile data or secure alternative", priority: "critical" },
-          { text: "Change passwords if sensitive data was entered", priority: "important" },
-          { text: "Report suspicious network to venue management", priority: "general" },
+          {
+            text: "Disconnect from this network immediately",
+            priority: "critical",
+          },
+          {
+            text: "Switch to mobile data or secure alternative",
+            priority: "critical",
+          },
+          {
+            text: "Change passwords if sensitive data was entered",
+            priority: "important",
+          },
+          {
+            text: "Report suspicious network to venue management",
+            priority: "general",
+          },
           { text: "Run security scans on your device", priority: "optional" }
         );
         break;
@@ -120,58 +161,88 @@ export function SecurityTips({ overallStatus, checks, onBack }: SecurityTipsProp
 
   const getAdditionalTips = (): TipWithPriority[] => {
     const additionalTips = [
-      { text: "Always verify network names with venue staff", priority: "important" as const },
-      { text: 'Look for "https://" in website address bars', priority: "general" as const },
-      { text: "Disable automatic WiFi connections", priority: "important" as const },
-      { text: "Use a reputable VPN for additional protection", priority: "general" as const },
-      { text: "Keep your device software updated", priority: "general" as const },
-      { text: "Enable two-factor authentication where possible", priority: "general" as const },
-      { text: "Avoid downloading files from unknown sources", priority: "important" as const },
+      {
+        text: "Always verify network names with venue staff",
+        priority: "important" as const,
+      },
+      {
+        text: 'Look for "https://" in website address bars',
+        priority: "general" as const,
+      },
+      {
+        text: "Disable automatic WiFi connections",
+        priority: "important" as const,
+      },
+      {
+        text: "Use a reputable VPN for additional protection",
+        priority: "general" as const,
+      },
+      {
+        text: "Keep your device software updated",
+        priority: "general" as const,
+      },
+      {
+        text: "Enable two-factor authentication where possible",
+        priority: "general" as const,
+      },
+      {
+        text: "Avoid downloading files from unknown sources",
+        priority: "important" as const,
+      },
       { text: "Log out of accounts when done", priority: "optional" as const },
-      { text: "Be cautious of fake WiFi hotspots with similar names", priority: "important" as const },
+      {
+        text: "Be cautious of fake WiFi hotspots with similar names",
+        priority: "important" as const,
+      },
     ];
 
     // Filter out tips that might be redundant with context-specific tips
     const contextTips = getContextSpecificTips();
-    const contextTexts = contextTips.map(tip => tip.text.toLowerCase());
-    
-    return additionalTips.filter(tip => 
-      !contextTexts.some(contextText => 
-        contextText.includes("verify") && tip.text.toLowerCase().includes("verify") ||
-        contextText.includes("https") && tip.text.toLowerCase().includes("https")
-      )
+    const contextTexts = contextTips.map((tip) => tip.text.toLowerCase());
+
+    return additionalTips.filter(
+      (tip) =>
+        !contextTexts.some(
+          (contextText) =>
+            (contextText.includes("verify") &&
+              tip.text.toLowerCase().includes("verify")) ||
+            (contextText.includes("https") &&
+              tip.text.toLowerCase().includes("https"))
+        )
     );
   };
 
-  const getTipColor = (priority: "critical" | "important" | "general" | "optional") => {
+  const getTipColor = (
+    priority: "critical" | "important" | "general" | "optional"
+  ) => {
     switch (priority) {
       case "critical":
         return {
           bg: "bg-red-50 border-red-200",
           dot: "bg-red-500",
           text: "text-red-800",
-          number: "bg-red-100 text-red-700"
+          number: "bg-red-100 text-red-700",
         };
       case "important":
         return {
           bg: "bg-yellow-50 border-yellow-200",
           dot: "bg-yellow-500",
           text: "text-yellow-800",
-          number: "bg-yellow-100 text-yellow-700"
+          number: "bg-yellow-100 text-yellow-700",
         };
       case "general":
         return {
           bg: "bg-blue-50 border-blue-200",
           dot: "bg-blue-400",
           text: "text-blue-800",
-          number: "bg-blue-100 text-blue-700"
+          number: "bg-blue-100 text-blue-700",
         };
       case "optional":
         return {
           bg: "bg-gray-50 border-gray-200",
           dot: "bg-gray-400",
           text: "text-gray-700",
-          number: "bg-gray-100 text-gray-600"
+          number: "bg-gray-100 text-gray-600",
         };
     }
   };
@@ -194,51 +265,25 @@ export function SecurityTips({ overallStatus, checks, onBack }: SecurityTipsProp
     >
       {/* Header with Back Button */}
       <motion.div
-        className="flex items-center mb-6"
+        className="flex items-center mb-6 gap-2"
         initial={{ opacity: 0, y: -20 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ delay: 0.2 }}
       >
         <motion.button
           onClick={onBack}
-          className="mr-4 p-2 rounded-lg hover:bg-gray-100 transition-colors"
+          className="rounded-lg hover:bg-gray-100 transition-colors flex items-center justify-center"
           whileHover={{ scale: 1.05 }}
           whileTap={{ scale: 0.95 }}
         >
-          <svg
-            className="w-5 h-5 text-gray-600"
-            fill="none"
-            stroke="currentColor"
-            viewBox="0 0 24 24"
-          >
-            <path
-              strokeLinecap="round"
-              strokeLinejoin="round"
-              strokeWidth={2}
-              d="M15 19l-7-7 7-7"
-            />
-          </svg>
+          <ArrowLeftIcon className="!size-5 text-gray-600" />
         </motion.button>
         <div className="flex items-center space-x-3">
           <div className="!size-10 rounded-lg bg-blue-100 flex items-center justify-center">
-            <svg
-              className="w-5 h-5 text-blue-600"
-              fill="none"
-              stroke="currentColor"
-              viewBox="0 0 24 24"
-            >
-              <path
-                strokeLinecap="round"
-                strokeLinejoin="round"
-                strokeWidth={2}
-                d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"
-              />
-            </svg>
+            <InfoIcon className="!size-6 text-blue-600" />
           </div>
           <div>
-            <h3 className="text-gray-900 font-bold text-xl">
-              Security Tips
-            </h3>
+            <h3 className="text-gray-900 font-bold text-xl">Security Tips</h3>
             <p className="text-gray-600 text-sm">
               Follow these guidelines to stay safe
             </p>
@@ -268,8 +313,12 @@ export function SecurityTips({ overallStatus, checks, onBack }: SecurityTipsProp
                     animate={{ opacity: 1, y: 0 }}
                     transition={{ delay: 0.4 + index * 0.1 }}
                   >
-                    <div className={`w-2 h-2 rounded-full mt-2 flex-shrink-0 ${colors.dot}`}></div>
-                    <p className={`leading-relaxed text-sm font-medium ${colors.text}`}>
+                    <div
+                      className={`w-2 h-2 rounded-full mt-2 flex-shrink-0 ${colors.dot}`}
+                    ></div>
+                    <p
+                      className={`leading-relaxed text-sm font-medium ${colors.text}`}
+                    >
                       {tip.text}
                     </p>
                   </motion.div>
@@ -282,7 +331,9 @@ export function SecurityTips({ overallStatus, checks, onBack }: SecurityTipsProp
         {/* Status-specific tips - NOW SECOND */}
         {statusTips.length > 0 && (
           <motion.div
-            className={contextTips.length > 0 ? "border-t border-gray-200 pt-6" : ""}
+            className={
+              contextTips.length > 0 ? "border-t border-gray-200 pt-6" : ""
+            }
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             transition={{ delay: contextTips.length > 0 ? 0.6 : 0.3 }}
@@ -299,9 +350,13 @@ export function SecurityTips({ overallStatus, checks, onBack }: SecurityTipsProp
                     className={`flex items-start space-x-3 p-4 rounded-lg border ${colors.bg}`}
                     initial={{ opacity: 0, x: -20 }}
                     animate={{ opacity: 1, x: 0 }}
-                    transition={{ delay: (contextTips.length > 0 ? 0.7 : 0.4) + index * 0.1 }}
+                    transition={{
+                      delay: (contextTips.length > 0 ? 0.7 : 0.4) + index * 0.1,
+                    }}
                   >
-                    <div className={`w-6 h-6 rounded-full flex items-center justify-center text-xs font-bold flex-shrink-0 mt-0.5 ${colors.number}`}>
+                    <div
+                      className={`w-6 h-6 rounded-full flex items-center justify-center text-xs font-bold flex-shrink-0 mt-0.5 ${colors.number}`}
+                    >
                       {index + 1}
                     </div>
                     <p className={`leading-relaxed font-medium ${colors.text}`}>
@@ -324,7 +379,9 @@ export function SecurityTips({ overallStatus, checks, onBack }: SecurityTipsProp
           >
             <div className="flex items-center justify-between mb-4">
               <h4 className="font-semibold text-gray-900">
-                {showMoreTips ? "Additional Security Tips" : "General WiFi Safety"}
+                {showMoreTips
+                  ? "Additional Security Tips"
+                  : "General WiFi Safety"}
               </h4>
               <motion.button
                 onClick={() => setShowMoreTips(!showMoreTips)}
@@ -335,14 +392,14 @@ export function SecurityTips({ overallStatus, checks, onBack }: SecurityTipsProp
                 {showMoreTips ? "show less" : "more tips"}
               </motion.button>
             </div>
-            
+
             <motion.div
-              animate={{ 
-                height: showMoreTips ? "auto" : "auto"
+              animate={{
+                height: showMoreTips ? "auto" : "auto",
               }}
-              transition={{ 
+              transition={{
                 duration: 0.3,
-                ease: [0.4, 0, 0.2, 1]
+                ease: [0.4, 0, 0.2, 1],
               }}
               className="overflow-hidden"
             >
@@ -355,7 +412,20 @@ export function SecurityTips({ overallStatus, checks, onBack }: SecurityTipsProp
                   transition={{ duration: 0.2 }}
                   className="space-y-2"
                 >
-                  {(showMoreTips ? additionalTips : additionalTips.slice(0, 3)).map((tip, index) => {
+                  {(showMoreTips
+                    ? [...additionalTips].sort((a, b) => {
+                        const priorityOrder = {
+                          critical: 0,
+                          important: 1,
+                          general: 2,
+                          optional: 3,
+                        };
+                        return (
+                          priorityOrder[a.priority] - priorityOrder[b.priority]
+                        );
+                      })
+                    : additionalTips.slice(0, 3)
+                  ).map((tip, index) => {
                     const colors = getTipColor(tip.priority);
                     return (
                       <motion.div
@@ -364,12 +434,14 @@ export function SecurityTips({ overallStatus, checks, onBack }: SecurityTipsProp
                         initial={{ opacity: 0, y: showMoreTips ? 10 : 0 }}
                         animate={{ opacity: 1, y: 0 }}
                         exit={{ opacity: 0, y: showMoreTips ? -10 : 0 }}
-                        transition={{ 
+                        transition={{
                           duration: 0.2,
-                          delay: index * 0.03
+                          delay: index * 0.03,
                         }}
                       >
-                        <div className={`w-2 h-2 rounded-full mt-2 flex-shrink-0 ${colors.dot}`}></div>
+                        <div
+                          className={`w-2 h-2 rounded-full mt-2 flex-shrink-0 ${colors.dot}`}
+                        ></div>
                         <p className={`text-sm leading-relaxed ${colors.text}`}>
                           {tip.text}
                         </p>
