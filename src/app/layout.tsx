@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
+import { ClerkProvider } from '@clerk/nextjs'
 import "./globals.css";
 
 const inter = Inter({
@@ -66,57 +67,59 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en" suppressHydrationWarning>
-      <head>
-        {/* Preconnect to external domains for performance */}
-        <link rel="preconnect" href="https://fonts.googleapis.com" />
-        <link
-          rel="preconnect"
-          href="https://fonts.gstatic.com"
-          crossOrigin="anonymous"
-        />
+    <ClerkProvider>
+      <html lang="en" suppressHydrationWarning>
+        <head>
+          {/* Preconnect to external domains for performance */}
+          <link rel="preconnect" href="https://fonts.googleapis.com" />
+          <link
+            rel="preconnect"
+            href="https://fonts.gstatic.com"
+            crossOrigin="anonymous"
+          />
 
-        {/* Favicon and app icons */}
-        <link rel="icon" href="/favicon.ico" sizes="any" />
-        <link rel="icon" href="/icon.svg" type="image/svg+xml" />
-        <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
-        <link rel="manifest" href="/manifest.json" />
+          {/* Favicon and app icons */}
+          <link rel="icon" href="/favicon.ico" sizes="any" />
+          <link rel="icon" href="/icon.svg" type="image/svg+xml" />
+          <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
+          <link rel="manifest" href="/manifest.json" />
 
-        {/* Security headers */}
-        <meta httpEquiv="X-Content-Type-Options" content="nosniff" />
-        <meta httpEquiv="X-XSS-Protection" content="1; mode=block" />
-        <meta
-          httpEquiv="Referrer-Policy"
-          content="strict-origin-when-cross-origin"
-        />
+          {/* Security headers */}
+          <meta httpEquiv="X-Content-Type-Options" content="nosniff" />
+          <meta httpEquiv="X-XSS-Protection" content="1; mode=block" />
+          <meta
+            httpEquiv="Referrer-Policy"
+            content="strict-origin-when-cross-origin"
+          />
 
-        {/* Accessibility meta tags */}
-        <meta name="application-name" content="WiFi Guard" />
-        <meta name="msapplication-TileColor" content="#3b82f6" />
-        <meta name="msapplication-config" content="/browserconfig.xml" />
-      </head>
-      <body className={`${inter.variable} antialiased`}>
-        {/* Main content wrapper with proper landmark */}
-        <main id="main-content" role="main" tabIndex={-1}>
-          {children}
-        </main>
+          {/* Accessibility meta tags */}
+          <meta name="application-name" content="WiFi Guard" />
+          <meta name="msapplication-TileColor" content="#3b82f6" />
+          <meta name="msapplication-config" content="/browserconfig.xml" />
+        </head>
+        <body className={`${inter.variable} antialiased`}>
+          {/* Main content wrapper with proper landmark */}
+          <main id="main-content" role="main" tabIndex={-1}>
+            {children}
+          </main>
 
-        {/* Live region for announcements */}
-        <div
-          id="announcements"
-          aria-live="polite"
-          aria-atomic="true"
-          className="sr-only"
-        />
+          {/* Live region for announcements */}
+          <div
+            id="announcements"
+            aria-live="polite"
+            aria-atomic="true"
+            className="sr-only"
+          />
 
-        {/* Status region for loading states */}
-        <div
-          id="status"
-          aria-live="polite"
-          aria-atomic="true"
-          className="sr-only"
-        />
-      </body>
-    </html>
+          {/* Status region for loading states */}
+          <div
+            id="status"
+            aria-live="polite"
+            aria-atomic="true"
+            className="sr-only"
+          />
+        </body>
+      </html>
+    </ClerkProvider>
   );
 }

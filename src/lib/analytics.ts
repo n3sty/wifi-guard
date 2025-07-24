@@ -1,15 +1,32 @@
-// Simple client-side analytics for user testing
+// Enhanced analytics with Clerk integration for anonymous user tracking
 // This tracks usage patterns without collecting personal data
+
+import { useUser } from '@clerk/nextjs'
+import React from 'react'
 
 interface AnalyticsEvent {
   event: string
   timestamp: number
+  userId?: string | null
+  sessionId: string
   data?: Record<string, unknown>
 }
 
-class SimpleAnalytics {
+interface AnalyticsMetadata {
+  events: AnalyticsEvent[]
+  userAgent: string
+  screenWidth: number
+  screenHeight: number
+  firstVisit: number
+  lastActivity: number
+  totalSessions: number
+  totalScans: number
+}
+
+class EnhancedAnalytics {
   private events: AnalyticsEvent[] = []
   private sessionId: string
+  private userId: string | null = null
   
   constructor() {
     this.sessionId = this.generateSessionId()
@@ -18,6 +35,11 @@ class SimpleAnalytics {
 
   private generateSessionId(): string {
     return Date.now().toString(36) + Math.random().toString(36).substr(2)
+  }
+
+  // Set user ID when available (from anonymous Clerk session)
+  setUserId(userId: string | null): void {
+    this.userId = userId
   }
 
   private loadStoredEvents(): void {
@@ -39,13 +61,56 @@ class SimpleAnalytics {
     }
   }
 
+  // Save analytics data to backend storage
+  private async saveToBackend(): Promise<void> {
+    if (!this.userId) return
+    
+    try {
+      // Use anonymous storage for both anonymous and authenticated users
+      const response = await fetch('/api/analytics/anonymous', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify({
+          userId: this.userId,
+          events: this.events,
+          metadata: this.generateMetadata()
+        }),
+      })
+      
+      if (!response.ok) {
+        console.error('Failed to save analytics to backend')
+      }
+    } catch (error) {
+      console.error('Error saving analytics:', error)
+    }
+  }
+
+  private generateMetadata(): AnalyticsMetadata {
+    const now = Date.now()
+    const summary = this.getEventSummary()
+    
+    return {
+      events: this.events,
+      userAgent: navigator.userAgent,
+      screenWidth: window.screen.width,
+      screenHeight: window.screen.height,
+      firstVisit: this.events[0]?.timestamp || now,
+      lastActivity: now,
+      totalSessions: new Set(this.events.map(e => e.sessionId)).size,
+      totalScans: summary.totalScans
+    }
+  }
+
   track(event: string, data?: Record<string, unknown>): void {
     const analyticsEvent: AnalyticsEvent = {
       event,
       timestamp: Date.now(),
+      userId: this.userId,
+      sessionId: this.sessionId,
       data: {
         ...data,
-        sessionId: this.sessionId,
         userAgent: navigator.userAgent,
         screenWidth: window.screen.width,
         screenHeight: window.screen.height
@@ -55,11 +120,26 @@ class SimpleAnalytics {
     this.events.push(analyticsEvent)
     this.saveEvents()
     
-    // Keep only last 100 events to avoid storage bloat
+    // Save to backend for persistence (debounced)
+    this.debouncedSaveToBackend()
+    
+    // Keep only last 100 events locally to avoid storage bloat
     if (this.events.length > 100) {
       this.events = this.events.slice(-100)
       this.saveEvents()
     }
+  }
+
+  // Debounced save to avoid too many API calls
+  private saveToBackendTimeout: NodeJS.Timeout | null = null
+  private debouncedSaveToBackend(): void {
+    if (this.saveToBackendTimeout) {
+      clearTimeout(this.saveToBackendTimeout)
+    }
+    
+    this.saveToBackendTimeout = setTimeout(() => {
+      this.saveToBackend()
+    }, 2000) // Wait 2 seconds after last event
   }
 
   getSessionEvents(): AnalyticsEvent[] {
@@ -129,7 +209,34 @@ class SimpleAnalytics {
 }
 
 // Create singleton instance
-export const analytics = new SimpleAnalytics()
+export const analytics = new EnhancedAnalytics()
+
+// React hook for setting up analytics with anonymous tracking
+export const useAnalytics = () => {
+  const { user } = useUser()
+  
+  React.useEffect(() => {
+    // Get or create anonymous ID
+    let anonymousId = localStorage.getItem('wifi_guard_anonymous_id')
+    if (!anonymousId) {
+      anonymousId = `anon_${Date.now()}_${Math.random().toString(36).substr(2, 9)}`
+      localStorage.setItem('wifi_guard_anonymous_id', anonymousId)
+    }
+    
+    // Use Clerk user ID if available, otherwise use anonymous ID
+    const userId = user?.id || anonymousId
+    analytics.setUserId(userId)
+    
+    // Track page load with user context
+    analytics.track('page_loaded', {
+      hasUser: !!user,
+      userType: user ? 'authenticated' : 'anonymous',
+      isAnonymous: !user
+    })
+  }, [user])
+  
+  return analytics
+}
 
 // Convenience tracking functions
 export const trackScanStarted = () => analytics.track('scan_started')

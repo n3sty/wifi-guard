@@ -1,0 +1,2414 @@
+{
+  "anon_1753283242114_3r1jfp4wu": {
+    "events": [
+      {
+        "event": "show_education_clicked",
+        "timestamp": 1753279505961,
+        "data": {
+          "sessionId": "mdg16lowjvcfwcwzhfo",
+          "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36",
+          "screenWidth": 1440,
+          "screenHeight": 900
+        }
+      },
+      {
+        "event": "scan_again_clicked",
+        "timestamp": 1753279509396,
+        "data": {
+          "sessionId": "mdg16lowjvcfwcwzhfo",
+          "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36",
+          "screenWidth": 1440,
+          "screenHeight": 900
+        }
+      },
+      {
+        "event": "scan_started",
+        "timestamp": 1753279510713,
+        "data": {
+          "sessionId": "mdg16lowjvcfwcwzhfo",
+          "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36",
+          "screenWidth": 1440,
+          "screenHeight": 900
+        }
+      },
+      {
+        "event": "scan_completed",
+        "timestamp": 1753279517362,
+        "data": {
+          "result": "danger",
+          "checksData": {
+            "checksCount": 3,
+            "hasFailures": true,
+            "hasWarnings": false
+          },
+          "sessionId": "mdg16lowjvcfwcwzhfo",
+          "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36",
+          "screenWidth": 1440,
+          "screenHeight": 900
+        }
+      },
+      {
+        "event": "page_loaded",
+        "timestamp": 1753279776405,
+        "data": {
+          "sessionId": "mdg1idlmryyzw8v7xei",
+          "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36",
+          "screenWidth": 1440,
+          "screenHeight": 900
+        }
+      },
+      {
+        "event": "scan_started",
+        "timestamp": 1753279777041,
+        "data": {
+          "sessionId": "mdg1idlmryyzw8v7xei",
+          "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36",
+          "screenWidth": 1440,
+          "screenHeight": 900
+        }
+      },
+      {
+        "event": "scan_completed",
+        "timestamp": 1753279782310,
+        "data": {
+          "result": "danger",
+          "checksData": {
+            "checksCount": 3,
+            "hasFailures": true,
+            "hasWarnings": false
+          },
+          "sessionId": "mdg1idlmryyzw8v7xei",
+          "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36",
+          "screenWidth": 1440,
+          "screenHeight": 900
+        }
+      },
+      {
+        "event": "show_education_clicked",
+        "timestamp": 1753279785141,
+        "data": {
+          "sessionId": "mdg1idlmryyzw8v7xei",
+          "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36",
+          "screenWidth": 1440,
+          "screenHeight": 900
+        }
+      },
+      {
+        "event": "page_loaded",
+        "timestamp": 1753280047027,
+        "data": {
+          "sessionId": "mdg1o6elvv2i60msw1d",
+          "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36",
+          "screenWidth": 1440,
+          "screenHeight": 900
+        }
+      },
+      {
+        "event": "scan_started",
+        "timestamp": 1753280047656,
+        "data": {
+          "sessionId": "mdg1o6elvv2i60msw1d",
+          "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36",
+          "screenWidth": 1440,
+          "screenHeight": 900
+        }
+      },
+      {
+        "event": "scan_completed",
+        "timestamp": 1753280052211,
+        "data": {
+          "result": "danger",
+          "checksData": {
+            "checksCount": 3,
+            "hasFailures": true,
+            "hasWarnings": false
+          },
+          "sessionId": "mdg1o6elvv2i60msw1d",
+          "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36",
+          "screenWidth": 1440,
+          "screenHeight": 900
+        }
+      },
+      {
+        "event": "show_education_clicked",
+        "timestamp": 1753280053996,
+        "data": {
+          "sessionId": "mdg1o6elvv2i60msw1d",
+          "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36",
+          "screenWidth": 1440,
+          "screenHeight": 900
+        }
+      },
+      {
+        "event": "show_details_clicked",
+        "timestamp": 1753280071490,
+        "data": {
+          "sessionId": "mdg1o6elvv2i60msw1d",
+          "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36",
+          "screenWidth": 1440,
+          "screenHeight": 900
+        }
+      },
+      {
+        "event": "show_details_clicked",
+        "timestamp": 1753280076855,
+        "data": {
+          "sessionId": "mdg1o6elvv2i60msw1d",
+          "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36",
+          "screenWidth": 1440,
+          "screenHeight": 900
+        }
+      },
+      {
+        "event": "page_loaded",
+        "timestamp": 1753280100986,
+        "data": {
+          "sessionId": "mdg1pc0vh1u9ghpqrea",
+          "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36",
+          "screenWidth": 1440,
+          "screenHeight": 900
+        }
+      },
+      {
+        "event": "scan_started",
+        "timestamp": 1753280104476,
+        "data": {
+          "sessionId": "mdg1pc0vh1u9ghpqrea",
+          "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36",
+          "screenWidth": 1440,
+          "screenHeight": 900
+        }
+      },
+      {
+        "event": "scan_completed",
+        "timestamp": 1753280109060,
+        "data": {
+          "result": "danger",
+          "checksData": {
+            "checksCount": 3,
+            "hasFailures": true,
+            "hasWarnings": false
+          },
+          "sessionId": "mdg1pc0vh1u9ghpqrea",
+          "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36",
+          "screenWidth": 1440,
+          "screenHeight": 900
+        }
+      },
+      {
+        "event": "show_education_clicked",
+        "timestamp": 1753280111160,
+        "data": {
+          "sessionId": "mdg1pc0vh1u9ghpqrea",
+          "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36",
+          "screenWidth": 1440,
+          "screenHeight": 900
+        }
+      },
+      {
+        "event": "page_loaded",
+        "timestamp": 1753280147892,
+        "data": {
+          "sessionId": "mdg1qc8qbucqj57vjx",
+          "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36",
+          "screenWidth": 1440,
+          "screenHeight": 900
+        }
+      },
+      {
+        "event": "scan_started",
+        "timestamp": 1753280148629,
+        "data": {
+          "sessionId": "mdg1qc8qbucqj57vjx",
+          "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36",
+          "screenWidth": 1440,
+          "screenHeight": 900
+        }
+      },
+      {
+        "event": "scan_completed",
+        "timestamp": 1753280154680,
+        "data": {
+          "result": "danger",
+          "checksData": {
+            "checksCount": 3,
+            "hasFailures": true,
+            "hasWarnings": false
+          },
+          "sessionId": "mdg1qc8qbucqj57vjx",
+          "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36",
+          "screenWidth": 1440,
+          "screenHeight": 900
+        }
+      },
+      {
+        "event": "show_education_clicked",
+        "timestamp": 1753280157059,
+        "data": {
+          "sessionId": "mdg1qc8qbucqj57vjx",
+          "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36",
+          "screenWidth": 1440,
+          "screenHeight": 900
+        }
+      },
+      {
+        "event": "page_loaded",
+        "timestamp": 1753280185151,
+        "data": {
+          "sessionId": "mdg1r4zk2sy3jzt21ky",
+          "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36",
+          "screenWidth": 1440,
+          "screenHeight": 900
+        }
+      },
+      {
+        "event": "scan_started",
+        "timestamp": 1753280189108,
+        "data": {
+          "sessionId": "mdg1r4zk2sy3jzt21ky",
+          "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36",
+          "screenWidth": 1440,
+          "screenHeight": 900
+        }
+      },
+      {
+        "event": "scan_completed",
+        "timestamp": 1753280193706,
+        "data": {
+          "result": "danger",
+          "checksData": {
+            "checksCount": 3,
+            "hasFailures": true,
+            "hasWarnings": false
+          },
+          "sessionId": "mdg1r4zk2sy3jzt21ky",
+          "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36",
+          "screenWidth": 1440,
+          "screenHeight": 900
+        }
+      },
+      {
+        "event": "show_details_clicked",
+        "timestamp": 1753280203511,
+        "data": {
+          "sessionId": "mdg1r4zk2sy3jzt21ky",
+          "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36",
+          "screenWidth": 1440,
+          "screenHeight": 900
+        }
+      },
+      {
+        "event": "show_education_clicked",
+        "timestamp": 1753280242309,
+        "data": {
+          "sessionId": "mdg1r4zk2sy3jzt21ky",
+          "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36",
+          "screenWidth": 1440,
+          "screenHeight": 900
+        }
+      },
+      {
+        "event": "show_details_clicked",
+        "timestamp": 1753280246459,
+        "data": {
+          "sessionId": "mdg1r4zk2sy3jzt21ky",
+          "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36",
+          "screenWidth": 1440,
+          "screenHeight": 900
+        }
+      },
+      {
+        "event": "show_details_clicked",
+        "timestamp": 1753280249190,
+        "data": {
+          "sessionId": "mdg1r4zk2sy3jzt21ky",
+          "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36",
+          "screenWidth": 1440,
+          "screenHeight": 900
+        }
+      },
+      {
+        "event": "page_loaded",
+        "timestamp": 1753280288315,
+        "data": {
+          "sessionId": "mdg1tcl5p0olelh2f58",
+          "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36",
+          "screenWidth": 1440,
+          "screenHeight": 900
+        }
+      },
+      {
+        "event": "scan_started",
+        "timestamp": 1753280290893,
+        "data": {
+          "sessionId": "mdg1tcl5p0olelh2f58",
+          "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36",
+          "screenWidth": 1440,
+          "screenHeight": 900
+        }
+      },
+      {
+        "event": "scan_completed",
+        "timestamp": 1753280296384,
+        "data": {
+          "result": "danger",
+          "checksData": {
+            "checksCount": 3,
+            "hasFailures": true,
+            "hasWarnings": false
+          },
+          "sessionId": "mdg1tcl5p0olelh2f58",
+          "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36",
+          "screenWidth": 1440,
+          "screenHeight": 900
+        }
+      },
+      {
+        "event": "show_details_clicked",
+        "timestamp": 1753280342591,
+        "data": {
+          "sessionId": "mdg1tcl5p0olelh2f58",
+          "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36",
+          "screenWidth": 1440,
+          "screenHeight": 900
+        }
+      },
+      {
+        "event": "show_education_clicked",
+        "timestamp": 1753280345990,
+        "data": {
+          "sessionId": "mdg1tcl5p0olelh2f58",
+          "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36",
+          "screenWidth": 1440,
+          "screenHeight": 900
+        }
+      },
+      {
+        "event": "page_loaded",
+        "timestamp": 1753280363351,
+        "data": {
+          "sessionId": "mdg1uyh004pvdvwhslmd",
+          "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36",
+          "screenWidth": 1440,
+          "screenHeight": 900
+        }
+      },
+      {
+        "event": "scan_started",
+        "timestamp": 1753280365696,
+        "data": {
+          "sessionId": "mdg1uyh004pvdvwhslmd",
+          "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36",
+          "screenWidth": 1440,
+          "screenHeight": 900
+        }
+      },
+      {
+        "event": "scan_completed",
+        "timestamp": 1753280370454,
+        "data": {
+          "result": "danger",
+          "checksData": {
+            "checksCount": 3,
+            "hasFailures": true,
+            "hasWarnings": false
+          },
+          "sessionId": "mdg1uyh004pvdvwhslmd",
+          "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36",
+          "screenWidth": 1440,
+          "screenHeight": 900
+        }
+      },
+      {
+        "event": "show_education_clicked",
+        "timestamp": 1753280371858,
+        "data": {
+          "sessionId": "mdg1uyh004pvdvwhslmd",
+          "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36",
+          "screenWidth": 1440,
+          "screenHeight": 900
+        }
+      },
+      {
+        "event": "page_loaded",
+        "timestamp": 1753283242115,
+        "userId": "anon_1753283242114_3r1jfp4wu",
+        "sessionId": "mdg3knqrdi6u3dyo0u",
+        "data": {
+          "hasUser": false,
+          "userType": "anonymous",
+          "isAnonymous": true,
+          "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36",
+          "screenWidth": 1440,
+          "screenHeight": 900
+        }
+      },
+      {
+        "event": "page_loaded",
+        "timestamp": 1753283242115,
+        "userId": "anon_1753283242114_3r1jfp4wu",
+        "sessionId": "mdg3knqrdi6u3dyo0u",
+        "data": {
+          "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36",
+          "screenWidth": 1440,
+          "screenHeight": 900
+        }
+      },
+      {
+        "event": "page_loaded",
+        "timestamp": 1753283242435,
+        "userId": "anon_1753283242114_3r1jfp4wu",
+        "sessionId": "mdg3knqrdi6u3dyo0u",
+        "data": {
+          "hasUser": false,
+          "userType": "anonymous",
+          "isAnonymous": true,
+          "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36",
+          "screenWidth": 1440,
+          "screenHeight": 900
+        }
+      },
+      {
+        "event": "scan_started",
+        "timestamp": 1753283287079,
+        "userId": "anon_1753283242114_3r1jfp4wu",
+        "sessionId": "mdg3knqrdi6u3dyo0u",
+        "data": {
+          "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36",
+          "screenWidth": 1440,
+          "screenHeight": 900
+        }
+      },
+      {
+        "event": "scan_completed",
+        "timestamp": 1753283291534,
+        "userId": "anon_1753283242114_3r1jfp4wu",
+        "sessionId": "mdg3knqrdi6u3dyo0u",
+        "data": {
+          "result": "danger",
+          "checksData": {
+            "checksCount": 3,
+            "hasFailures": true,
+            "hasWarnings": false
+          },
+          "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36",
+          "screenWidth": 1440,
+          "screenHeight": 900
+        }
+      },
+      {
+        "event": "page_loaded",
+        "timestamp": 1753283332360,
+        "userId": "anon_1753283242114_3r1jfp4wu",
+        "sessionId": "mdg3mlcj7x7buq7p9m3",
+        "data": {
+          "hasUser": false,
+          "userType": "anonymous",
+          "isAnonymous": true,
+          "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36",
+          "screenWidth": 1440,
+          "screenHeight": 900
+        }
+      },
+      {
+        "event": "page_loaded",
+        "timestamp": 1753283332361,
+        "userId": "anon_1753283242114_3r1jfp4wu",
+        "sessionId": "mdg3mlcj7x7buq7p9m3",
+        "data": {
+          "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36",
+          "screenWidth": 1440,
+          "screenHeight": 900
+        }
+      },
+      {
+        "event": "page_loaded",
+        "timestamp": 1753283332789,
+        "userId": "anon_1753283242114_3r1jfp4wu",
+        "sessionId": "mdg3mlcj7x7buq7p9m3",
+        "data": {
+          "hasUser": false,
+          "userType": "anonymous",
+          "isAnonymous": true,
+          "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36",
+          "screenWidth": 1440,
+          "screenHeight": 900
+        }
+      },
+      {
+        "event": "page_loaded",
+        "timestamp": 1753299423925,
+        "userId": "anon_1753283242114_3r1jfp4wu",
+        "sessionId": "mdgd7hkurnjpi79nxfm",
+        "data": {
+          "hasUser": false,
+          "userType": "anonymous",
+          "isAnonymous": true,
+          "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36",
+          "screenWidth": 1440,
+          "screenHeight": 900
+        }
+      },
+      {
+        "event": "page_loaded",
+        "timestamp": 1753299424311,
+        "userId": "anon_1753283242114_3r1jfp4wu",
+        "sessionId": "mdgd7hkurnjpi79nxfm",
+        "data": {
+          "hasUser": false,
+          "userType": "anonymous",
+          "isAnonymous": true,
+          "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36",
+          "screenWidth": 1440,
+          "screenHeight": 900
+        }
+      },
+      {
+        "event": "page_loaded",
+        "timestamp": 1753299769175,
+        "userId": "anon_1753283242114_3r1jfp4wu",
+        "sessionId": "mdgdew4fj13utji9zo8",
+        "data": {
+          "hasUser": false,
+          "userType": "anonymous",
+          "isAnonymous": true,
+          "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36",
+          "screenWidth": 1440,
+          "screenHeight": 900
+        }
+      },
+      {
+        "event": "page_loaded",
+        "timestamp": 1753299769816,
+        "userId": "anon_1753283242114_3r1jfp4wu",
+        "sessionId": "mdgdew4fj13utji9zo8",
+        "data": {
+          "hasUser": false,
+          "userType": "anonymous",
+          "isAnonymous": true,
+          "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36",
+          "screenWidth": 1440,
+          "screenHeight": 900
+        }
+      }
+    ],
+    "metadata": {
+      "events": [
+        {
+          "event": "page_loaded",
+          "timestamp": 1753275593437,
+          "data": {
+            "sessionId": "mdfz0iq1dvk9piflnlk",
+            "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36",
+            "screenWidth": 1440,
+            "screenHeight": 900
+          }
+        },
+        {
+          "event": "page_loaded",
+          "timestamp": 1753275628664,
+          "data": {
+            "sessionId": "mdfz1h5p0n722uitndn",
+            "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36",
+            "screenWidth": 1440,
+            "screenHeight": 900
+          }
+        },
+        {
+          "event": "page_loaded",
+          "timestamp": 1753275645735,
+          "data": {
+            "sessionId": "mdfz1ubvf5gla58opbp",
+            "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36",
+            "screenWidth": 1440,
+            "screenHeight": 900
+          }
+        },
+        {
+          "event": "page_loaded",
+          "timestamp": 1753275779882,
+          "data": {
+            "sessionId": "mdfz4pucliq7jokey5",
+            "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36",
+            "screenWidth": 1440,
+            "screenHeight": 900
+          }
+        },
+        {
+          "event": "page_loaded",
+          "timestamp": 1753275801137,
+          "data": {
+            "sessionId": "mdfz56866q59cp8tiy8",
+            "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36",
+            "screenWidth": 1440,
+            "screenHeight": 900
+          }
+        },
+        {
+          "event": "page_loaded",
+          "timestamp": 1753275807514,
+          "data": {
+            "sessionId": "mdfz5b5pizl2bxjufyr",
+            "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36",
+            "screenWidth": 1440,
+            "screenHeight": 900
+          }
+        },
+        {
+          "event": "page_loaded",
+          "timestamp": 1753275848644,
+          "data": {
+            "sessionId": "mdfz66vy1lq5a4v70rk",
+            "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36",
+            "screenWidth": 1440,
+            "screenHeight": 900
+          }
+        },
+        {
+          "event": "page_loaded",
+          "timestamp": 1753275870591,
+          "data": {
+            "sessionId": "mdfz6nu9ftquez4nxm8",
+            "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36",
+            "screenWidth": 1440,
+            "screenHeight": 900
+          }
+        },
+        {
+          "event": "page_loaded",
+          "timestamp": 1753275874295,
+          "data": {
+            "sessionId": "mdfz6qp52g22clbcb9r",
+            "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36",
+            "screenWidth": 1440,
+            "screenHeight": 900
+          }
+        },
+        {
+          "event": "page_loaded",
+          "timestamp": 1753275916027,
+          "data": {
+            "sessionId": "mdfz7mwj38ez9g1zdfk",
+            "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36",
+            "screenWidth": 1440,
+            "screenHeight": 900
+          }
+        },
+        {
+          "event": "page_loaded",
+          "timestamp": 1753275981027,
+          "data": {
+            "sessionId": "mdfz9125hw7svbp8pv",
+            "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36",
+            "screenWidth": 1440,
+            "screenHeight": 900
+          }
+        },
+        {
+          "event": "page_loaded",
+          "timestamp": 1753276014552,
+          "data": {
+            "sessionId": "mdfz9qxj2ellgfk5hzk",
+            "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36",
+            "screenWidth": 1440,
+            "screenHeight": 900
+          }
+        },
+        {
+          "event": "scan_started",
+          "timestamp": 1753276015639,
+          "data": {
+            "sessionId": "mdfz9qxj2ellgfk5hzk",
+            "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36",
+            "screenWidth": 1440,
+            "screenHeight": 900
+          }
+        },
+        {
+          "event": "scan_completed",
+          "timestamp": 1753276020313,
+          "data": {
+            "result": "danger",
+            "checksData": {
+              "checksCount": 3,
+              "hasFailures": true,
+              "hasWarnings": false
+            },
+            "sessionId": "mdfz9qxj2ellgfk5hzk",
+            "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36",
+            "screenWidth": 1440,
+            "screenHeight": 900
+          }
+        },
+        {
+          "event": "show_details_clicked",
+          "timestamp": 1753276022471,
+          "data": {
+            "sessionId": "mdfz9qxj2ellgfk5hzk",
+            "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36",
+            "screenWidth": 1440,
+            "screenHeight": 900
+          }
+        },
+        {
+          "event": "page_loaded",
+          "timestamp": 1753277609415,
+          "data": {
+            "sessionId": "mdfz9qxj2ellgfk5hzk",
+            "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36",
+            "screenWidth": 1440,
+            "screenHeight": 900
+          }
+        },
+        {
+          "event": "page_loaded",
+          "timestamp": 1753277609416,
+          "data": {
+            "sessionId": "mdfz9qxj2ellgfk5hzk",
+            "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36",
+            "screenWidth": 1440,
+            "screenHeight": 900
+          }
+        },
+        {
+          "event": "page_loaded",
+          "timestamp": 1753277612859,
+          "data": {
+            "sessionId": "mdfz9qxj2ellgfk5hzk",
+            "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36",
+            "screenWidth": 1440,
+            "screenHeight": 900
+          }
+        },
+        {
+          "event": "page_loaded",
+          "timestamp": 1753277612860,
+          "data": {
+            "sessionId": "mdfz9qxj2ellgfk5hzk",
+            "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36",
+            "screenWidth": 1440,
+            "screenHeight": 900
+          }
+        },
+        {
+          "event": "page_loaded",
+          "timestamp": 1753277775512,
+          "data": {
+            "sessionId": "mdg0bhpn2pv99uqld68",
+            "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36",
+            "screenWidth": 1440,
+            "screenHeight": 900
+          }
+        },
+        {
+          "event": "page_loaded",
+          "timestamp": 1753277786392,
+          "data": {
+            "sessionId": "mdg0bq3ys0tycibr9w",
+            "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36",
+            "screenWidth": 1440,
+            "screenHeight": 900
+          }
+        },
+        {
+          "event": "page_loaded",
+          "timestamp": 1753277810103,
+          "data": {
+            "sessionId": "mdg0c8ei0vik3fg60xbb",
+            "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36",
+            "screenWidth": 1440,
+            "screenHeight": 900
+          }
+        },
+        {
+          "event": "page_loaded",
+          "timestamp": 1753278371506,
+          "data": {
+            "sessionId": "mdg0o9l34bcin4j85z1",
+            "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36",
+            "screenWidth": 1440,
+            "screenHeight": 900
+          }
+        },
+        {
+          "event": "scan_started",
+          "timestamp": 1753278374278,
+          "data": {
+            "sessionId": "mdg0o9l34bcin4j85z1",
+            "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36",
+            "screenWidth": 1440,
+            "screenHeight": 900
+          }
+        },
+        {
+          "event": "scan_completed",
+          "timestamp": 1753278378918,
+          "data": {
+            "result": "danger",
+            "checksData": {
+              "checksCount": 3,
+              "hasFailures": true,
+              "hasWarnings": false
+            },
+            "sessionId": "mdg0o9l34bcin4j85z1",
+            "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36",
+            "screenWidth": 1440,
+            "screenHeight": 900
+          }
+        },
+        {
+          "event": "show_education_clicked",
+          "timestamp": 1753278382887,
+          "data": {
+            "sessionId": "mdg0o9l34bcin4j85z1",
+            "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36",
+            "screenWidth": 1440,
+            "screenHeight": 900
+          }
+        },
+        {
+          "event": "show_details_clicked",
+          "timestamp": 1753278389253,
+          "data": {
+            "sessionId": "mdg0o9l34bcin4j85z1",
+            "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36",
+            "screenWidth": 1440,
+            "screenHeight": 900
+          }
+        },
+        {
+          "event": "show_education_clicked",
+          "timestamp": 1753278405304,
+          "data": {
+            "sessionId": "mdg0o9l34bcin4j85z1",
+            "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36",
+            "screenWidth": 1440,
+            "screenHeight": 900
+          }
+        },
+        {
+          "event": "scan_again_clicked",
+          "timestamp": 1753278411787,
+          "data": {
+            "sessionId": "mdg0o9l34bcin4j85z1",
+            "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36",
+            "screenWidth": 1440,
+            "screenHeight": 900
+          }
+        },
+        {
+          "event": "scan_started",
+          "timestamp": 1753278413387,
+          "data": {
+            "sessionId": "mdg0o9l34bcin4j85z1",
+            "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36",
+            "screenWidth": 1440,
+            "screenHeight": 900
+          }
+        },
+        {
+          "event": "scan_completed",
+          "timestamp": 1753278418049,
+          "data": {
+            "result": "danger",
+            "checksData": {
+              "checksCount": 3,
+              "hasFailures": true,
+              "hasWarnings": false
+            },
+            "sessionId": "mdg0o9l34bcin4j85z1",
+            "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36",
+            "screenWidth": 1440,
+            "screenHeight": 900
+          }
+        },
+        {
+          "event": "page_loaded",
+          "timestamp": 1753278744644,
+          "data": {
+            "sessionId": "mdg0w9hcedlukf1w3o9",
+            "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36",
+            "screenWidth": 1440,
+            "screenHeight": 900
+          }
+        },
+        {
+          "event": "page_loaded",
+          "timestamp": 1753278785109,
+          "data": {
+            "sessionId": "mdg0x4mk1zyebyqzjnq",
+            "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36",
+            "screenWidth": 1440,
+            "screenHeight": 900
+          }
+        },
+        {
+          "event": "scan_started",
+          "timestamp": 1753278786431,
+          "data": {
+            "sessionId": "mdg0x4mk1zyebyqzjnq",
+            "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36",
+            "screenWidth": 1440,
+            "screenHeight": 900
+          }
+        },
+        {
+          "event": "scan_completed",
+          "timestamp": 1753278791031,
+          "data": {
+            "result": "danger",
+            "checksData": {
+              "checksCount": 3,
+              "hasFailures": true,
+              "hasWarnings": false
+            },
+            "sessionId": "mdg0x4mk1zyebyqzjnq",
+            "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36",
+            "screenWidth": 1440,
+            "screenHeight": 900
+          }
+        },
+        {
+          "event": "show_details_clicked",
+          "timestamp": 1753278793133,
+          "data": {
+            "sessionId": "mdg0x4mk1zyebyqzjnq",
+            "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36",
+            "screenWidth": 1440,
+            "screenHeight": 900
+          }
+        },
+        {
+          "event": "show_education_clicked",
+          "timestamp": 1753278797432,
+          "data": {
+            "sessionId": "mdg0x4mk1zyebyqzjnq",
+            "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36",
+            "screenWidth": 1440,
+            "screenHeight": 900
+          }
+        },
+        {
+          "event": "page_loaded",
+          "timestamp": 1753278852922,
+          "data": {
+            "sessionId": "mdg0yl2ed4hbe7h75z",
+            "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36",
+            "screenWidth": 1440,
+            "screenHeight": 900
+          }
+        },
+        {
+          "event": "scan_started",
+          "timestamp": 1753278853725,
+          "data": {
+            "sessionId": "mdg0yl2ed4hbe7h75z",
+            "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36",
+            "screenWidth": 1440,
+            "screenHeight": 900
+          }
+        },
+        {
+          "event": "scan_completed",
+          "timestamp": 1753278858477,
+          "data": {
+            "result": "danger",
+            "checksData": {
+              "checksCount": 3,
+              "hasFailures": true,
+              "hasWarnings": false
+            },
+            "sessionId": "mdg0yl2ed4hbe7h75z",
+            "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36",
+            "screenWidth": 1440,
+            "screenHeight": 900
+          }
+        },
+        {
+          "event": "scan_again_clicked",
+          "timestamp": 1753278861341,
+          "data": {
+            "sessionId": "mdg0yl2ed4hbe7h75z",
+            "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36",
+            "screenWidth": 1440,
+            "screenHeight": 900
+          }
+        },
+        {
+          "event": "page_loaded",
+          "timestamp": 1753278862517,
+          "data": {
+            "sessionId": "mdg0ysh6458suxkugtb",
+            "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36",
+            "screenWidth": 1440,
+            "screenHeight": 900
+          }
+        },
+        {
+          "event": "scan_started",
+          "timestamp": 1753278887369,
+          "data": {
+            "sessionId": "mdg0ysh6458suxkugtb",
+            "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36",
+            "screenWidth": 1440,
+            "screenHeight": 900
+          }
+        },
+        {
+          "event": "scan_completed",
+          "timestamp": 1753278893734,
+          "data": {
+            "result": "danger",
+            "checksData": {
+              "checksCount": 3,
+              "hasFailures": true,
+              "hasWarnings": false
+            },
+            "sessionId": "mdg0ysh6458suxkugtb",
+            "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36",
+            "screenWidth": 1440,
+            "screenHeight": 900
+          }
+        },
+        {
+          "event": "show_details_clicked",
+          "timestamp": 1753279144371,
+          "data": {
+            "sessionId": "mdg0ysh6458suxkugtb",
+            "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36",
+            "screenWidth": 1440,
+            "screenHeight": 900
+          }
+        },
+        {
+          "event": "page_loaded",
+          "timestamp": 1753279227025,
+          "data": {
+            "sessionId": "mdg16lowjvcfwcwzhfo",
+            "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36",
+            "screenWidth": 1440,
+            "screenHeight": 900
+          }
+        },
+        {
+          "event": "scan_started",
+          "timestamp": 1753279227848,
+          "data": {
+            "sessionId": "mdg16lowjvcfwcwzhfo",
+            "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36",
+            "screenWidth": 1440,
+            "screenHeight": 900
+          }
+        },
+        {
+          "event": "scan_completed",
+          "timestamp": 1753279233419,
+          "data": {
+            "result": "danger",
+            "checksData": {
+              "checksCount": 3,
+              "hasFailures": true,
+              "hasWarnings": false
+            },
+            "sessionId": "mdg16lowjvcfwcwzhfo",
+            "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36",
+            "screenWidth": 1440,
+            "screenHeight": 900
+          }
+        },
+        {
+          "event": "show_details_clicked",
+          "timestamp": 1753279254514,
+          "data": {
+            "sessionId": "mdg16lowjvcfwcwzhfo",
+            "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36",
+            "screenWidth": 1440,
+            "screenHeight": 900
+          }
+        },
+        {
+          "event": "show_education_clicked",
+          "timestamp": 1753279258263,
+          "data": {
+            "sessionId": "mdg16lowjvcfwcwzhfo",
+            "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36",
+            "screenWidth": 1440,
+            "screenHeight": 900
+          }
+        },
+        {
+          "event": "show_education_clicked",
+          "timestamp": 1753279505961,
+          "data": {
+            "sessionId": "mdg16lowjvcfwcwzhfo",
+            "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36",
+            "screenWidth": 1440,
+            "screenHeight": 900
+          }
+        },
+        {
+          "event": "scan_again_clicked",
+          "timestamp": 1753279509396,
+          "data": {
+            "sessionId": "mdg16lowjvcfwcwzhfo",
+            "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36",
+            "screenWidth": 1440,
+            "screenHeight": 900
+          }
+        },
+        {
+          "event": "scan_started",
+          "timestamp": 1753279510713,
+          "data": {
+            "sessionId": "mdg16lowjvcfwcwzhfo",
+            "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36",
+            "screenWidth": 1440,
+            "screenHeight": 900
+          }
+        },
+        {
+          "event": "scan_completed",
+          "timestamp": 1753279517362,
+          "data": {
+            "result": "danger",
+            "checksData": {
+              "checksCount": 3,
+              "hasFailures": true,
+              "hasWarnings": false
+            },
+            "sessionId": "mdg16lowjvcfwcwzhfo",
+            "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36",
+            "screenWidth": 1440,
+            "screenHeight": 900
+          }
+        },
+        {
+          "event": "page_loaded",
+          "timestamp": 1753279776405,
+          "data": {
+            "sessionId": "mdg1idlmryyzw8v7xei",
+            "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36",
+            "screenWidth": 1440,
+            "screenHeight": 900
+          }
+        },
+        {
+          "event": "scan_started",
+          "timestamp": 1753279777041,
+          "data": {
+            "sessionId": "mdg1idlmryyzw8v7xei",
+            "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36",
+            "screenWidth": 1440,
+            "screenHeight": 900
+          }
+        },
+        {
+          "event": "scan_completed",
+          "timestamp": 1753279782310,
+          "data": {
+            "result": "danger",
+            "checksData": {
+              "checksCount": 3,
+              "hasFailures": true,
+              "hasWarnings": false
+            },
+            "sessionId": "mdg1idlmryyzw8v7xei",
+            "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36",
+            "screenWidth": 1440,
+            "screenHeight": 900
+          }
+        },
+        {
+          "event": "show_education_clicked",
+          "timestamp": 1753279785141,
+          "data": {
+            "sessionId": "mdg1idlmryyzw8v7xei",
+            "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36",
+            "screenWidth": 1440,
+            "screenHeight": 900
+          }
+        },
+        {
+          "event": "page_loaded",
+          "timestamp": 1753280047027,
+          "data": {
+            "sessionId": "mdg1o6elvv2i60msw1d",
+            "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36",
+            "screenWidth": 1440,
+            "screenHeight": 900
+          }
+        },
+        {
+          "event": "scan_started",
+          "timestamp": 1753280047656,
+          "data": {
+            "sessionId": "mdg1o6elvv2i60msw1d",
+            "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36",
+            "screenWidth": 1440,
+            "screenHeight": 900
+          }
+        },
+        {
+          "event": "scan_completed",
+          "timestamp": 1753280052211,
+          "data": {
+            "result": "danger",
+            "checksData": {
+              "checksCount": 3,
+              "hasFailures": true,
+              "hasWarnings": false
+            },
+            "sessionId": "mdg1o6elvv2i60msw1d",
+            "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36",
+            "screenWidth": 1440,
+            "screenHeight": 900
+          }
+        },
+        {
+          "event": "show_education_clicked",
+          "timestamp": 1753280053996,
+          "data": {
+            "sessionId": "mdg1o6elvv2i60msw1d",
+            "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36",
+            "screenWidth": 1440,
+            "screenHeight": 900
+          }
+        },
+        {
+          "event": "show_details_clicked",
+          "timestamp": 1753280071490,
+          "data": {
+            "sessionId": "mdg1o6elvv2i60msw1d",
+            "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36",
+            "screenWidth": 1440,
+            "screenHeight": 900
+          }
+        },
+        {
+          "event": "show_details_clicked",
+          "timestamp": 1753280076855,
+          "data": {
+            "sessionId": "mdg1o6elvv2i60msw1d",
+            "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36",
+            "screenWidth": 1440,
+            "screenHeight": 900
+          }
+        },
+        {
+          "event": "page_loaded",
+          "timestamp": 1753280100986,
+          "data": {
+            "sessionId": "mdg1pc0vh1u9ghpqrea",
+            "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36",
+            "screenWidth": 1440,
+            "screenHeight": 900
+          }
+        },
+        {
+          "event": "scan_started",
+          "timestamp": 1753280104476,
+          "data": {
+            "sessionId": "mdg1pc0vh1u9ghpqrea",
+            "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36",
+            "screenWidth": 1440,
+            "screenHeight": 900
+          }
+        },
+        {
+          "event": "scan_completed",
+          "timestamp": 1753280109060,
+          "data": {
+            "result": "danger",
+            "checksData": {
+              "checksCount": 3,
+              "hasFailures": true,
+              "hasWarnings": false
+            },
+            "sessionId": "mdg1pc0vh1u9ghpqrea",
+            "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36",
+            "screenWidth": 1440,
+            "screenHeight": 900
+          }
+        },
+        {
+          "event": "show_education_clicked",
+          "timestamp": 1753280111160,
+          "data": {
+            "sessionId": "mdg1pc0vh1u9ghpqrea",
+            "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36",
+            "screenWidth": 1440,
+            "screenHeight": 900
+          }
+        },
+        {
+          "event": "page_loaded",
+          "timestamp": 1753280147892,
+          "data": {
+            "sessionId": "mdg1qc8qbucqj57vjx",
+            "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36",
+            "screenWidth": 1440,
+            "screenHeight": 900
+          }
+        },
+        {
+          "event": "scan_started",
+          "timestamp": 1753280148629,
+          "data": {
+            "sessionId": "mdg1qc8qbucqj57vjx",
+            "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36",
+            "screenWidth": 1440,
+            "screenHeight": 900
+          }
+        },
+        {
+          "event": "scan_completed",
+          "timestamp": 1753280154680,
+          "data": {
+            "result": "danger",
+            "checksData": {
+              "checksCount": 3,
+              "hasFailures": true,
+              "hasWarnings": false
+            },
+            "sessionId": "mdg1qc8qbucqj57vjx",
+            "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36",
+            "screenWidth": 1440,
+            "screenHeight": 900
+          }
+        },
+        {
+          "event": "show_education_clicked",
+          "timestamp": 1753280157059,
+          "data": {
+            "sessionId": "mdg1qc8qbucqj57vjx",
+            "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36",
+            "screenWidth": 1440,
+            "screenHeight": 900
+          }
+        },
+        {
+          "event": "page_loaded",
+          "timestamp": 1753280185151,
+          "data": {
+            "sessionId": "mdg1r4zk2sy3jzt21ky",
+            "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36",
+            "screenWidth": 1440,
+            "screenHeight": 900
+          }
+        },
+        {
+          "event": "scan_started",
+          "timestamp": 1753280189108,
+          "data": {
+            "sessionId": "mdg1r4zk2sy3jzt21ky",
+            "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36",
+            "screenWidth": 1440,
+            "screenHeight": 900
+          }
+        },
+        {
+          "event": "scan_completed",
+          "timestamp": 1753280193706,
+          "data": {
+            "result": "danger",
+            "checksData": {
+              "checksCount": 3,
+              "hasFailures": true,
+              "hasWarnings": false
+            },
+            "sessionId": "mdg1r4zk2sy3jzt21ky",
+            "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36",
+            "screenWidth": 1440,
+            "screenHeight": 900
+          }
+        },
+        {
+          "event": "show_details_clicked",
+          "timestamp": 1753280203511,
+          "data": {
+            "sessionId": "mdg1r4zk2sy3jzt21ky",
+            "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36",
+            "screenWidth": 1440,
+            "screenHeight": 900
+          }
+        },
+        {
+          "event": "show_education_clicked",
+          "timestamp": 1753280242309,
+          "data": {
+            "sessionId": "mdg1r4zk2sy3jzt21ky",
+            "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36",
+            "screenWidth": 1440,
+            "screenHeight": 900
+          }
+        },
+        {
+          "event": "show_details_clicked",
+          "timestamp": 1753280246459,
+          "data": {
+            "sessionId": "mdg1r4zk2sy3jzt21ky",
+            "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36",
+            "screenWidth": 1440,
+            "screenHeight": 900
+          }
+        },
+        {
+          "event": "show_details_clicked",
+          "timestamp": 1753280249190,
+          "data": {
+            "sessionId": "mdg1r4zk2sy3jzt21ky",
+            "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36",
+            "screenWidth": 1440,
+            "screenHeight": 900
+          }
+        },
+        {
+          "event": "page_loaded",
+          "timestamp": 1753280288315,
+          "data": {
+            "sessionId": "mdg1tcl5p0olelh2f58",
+            "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36",
+            "screenWidth": 1440,
+            "screenHeight": 900
+          }
+        },
+        {
+          "event": "scan_started",
+          "timestamp": 1753280290893,
+          "data": {
+            "sessionId": "mdg1tcl5p0olelh2f58",
+            "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36",
+            "screenWidth": 1440,
+            "screenHeight": 900
+          }
+        },
+        {
+          "event": "scan_completed",
+          "timestamp": 1753280296384,
+          "data": {
+            "result": "danger",
+            "checksData": {
+              "checksCount": 3,
+              "hasFailures": true,
+              "hasWarnings": false
+            },
+            "sessionId": "mdg1tcl5p0olelh2f58",
+            "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36",
+            "screenWidth": 1440,
+            "screenHeight": 900
+          }
+        },
+        {
+          "event": "show_details_clicked",
+          "timestamp": 1753280342591,
+          "data": {
+            "sessionId": "mdg1tcl5p0olelh2f58",
+            "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36",
+            "screenWidth": 1440,
+            "screenHeight": 900
+          }
+        },
+        {
+          "event": "show_education_clicked",
+          "timestamp": 1753280345990,
+          "data": {
+            "sessionId": "mdg1tcl5p0olelh2f58",
+            "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36",
+            "screenWidth": 1440,
+            "screenHeight": 900
+          }
+        },
+        {
+          "event": "page_loaded",
+          "timestamp": 1753280363351,
+          "data": {
+            "sessionId": "mdg1uyh004pvdvwhslmd",
+            "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36",
+            "screenWidth": 1440,
+            "screenHeight": 900
+          }
+        },
+        {
+          "event": "scan_started",
+          "timestamp": 1753280365696,
+          "data": {
+            "sessionId": "mdg1uyh004pvdvwhslmd",
+            "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36",
+            "screenWidth": 1440,
+            "screenHeight": 900
+          }
+        },
+        {
+          "event": "scan_completed",
+          "timestamp": 1753280370454,
+          "data": {
+            "result": "danger",
+            "checksData": {
+              "checksCount": 3,
+              "hasFailures": true,
+              "hasWarnings": false
+            },
+            "sessionId": "mdg1uyh004pvdvwhslmd",
+            "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36",
+            "screenWidth": 1440,
+            "screenHeight": 900
+          }
+        },
+        {
+          "event": "show_education_clicked",
+          "timestamp": 1753280371858,
+          "data": {
+            "sessionId": "mdg1uyh004pvdvwhslmd",
+            "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36",
+            "screenWidth": 1440,
+            "screenHeight": 900
+          }
+        },
+        {
+          "event": "page_loaded",
+          "timestamp": 1753283242115,
+          "userId": "anon_1753283242114_3r1jfp4wu",
+          "sessionId": "mdg3knqrdi6u3dyo0u",
+          "data": {
+            "hasUser": false,
+            "userType": "anonymous",
+            "isAnonymous": true,
+            "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36",
+            "screenWidth": 1440,
+            "screenHeight": 900
+          }
+        },
+        {
+          "event": "page_loaded",
+          "timestamp": 1753283242115,
+          "userId": "anon_1753283242114_3r1jfp4wu",
+          "sessionId": "mdg3knqrdi6u3dyo0u",
+          "data": {
+            "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36",
+            "screenWidth": 1440,
+            "screenHeight": 900
+          }
+        },
+        {
+          "event": "page_loaded",
+          "timestamp": 1753283242435,
+          "userId": "anon_1753283242114_3r1jfp4wu",
+          "sessionId": "mdg3knqrdi6u3dyo0u",
+          "data": {
+            "hasUser": false,
+            "userType": "anonymous",
+            "isAnonymous": true,
+            "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36",
+            "screenWidth": 1440,
+            "screenHeight": 900
+          }
+        },
+        {
+          "event": "scan_started",
+          "timestamp": 1753283287079,
+          "userId": "anon_1753283242114_3r1jfp4wu",
+          "sessionId": "mdg3knqrdi6u3dyo0u",
+          "data": {
+            "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36",
+            "screenWidth": 1440,
+            "screenHeight": 900
+          }
+        },
+        {
+          "event": "scan_completed",
+          "timestamp": 1753283291534,
+          "userId": "anon_1753283242114_3r1jfp4wu",
+          "sessionId": "mdg3knqrdi6u3dyo0u",
+          "data": {
+            "result": "danger",
+            "checksData": {
+              "checksCount": 3,
+              "hasFailures": true,
+              "hasWarnings": false
+            },
+            "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36",
+            "screenWidth": 1440,
+            "screenHeight": 900
+          }
+        },
+        {
+          "event": "page_loaded",
+          "timestamp": 1753283332360,
+          "userId": "anon_1753283242114_3r1jfp4wu",
+          "sessionId": "mdg3mlcj7x7buq7p9m3",
+          "data": {
+            "hasUser": false,
+            "userType": "anonymous",
+            "isAnonymous": true,
+            "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36",
+            "screenWidth": 1440,
+            "screenHeight": 900
+          }
+        },
+        {
+          "event": "page_loaded",
+          "timestamp": 1753283332361,
+          "userId": "anon_1753283242114_3r1jfp4wu",
+          "sessionId": "mdg3mlcj7x7buq7p9m3",
+          "data": {
+            "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36",
+            "screenWidth": 1440,
+            "screenHeight": 900
+          }
+        },
+        {
+          "event": "page_loaded",
+          "timestamp": 1753283332789,
+          "userId": "anon_1753283242114_3r1jfp4wu",
+          "sessionId": "mdg3mlcj7x7buq7p9m3",
+          "data": {
+            "hasUser": false,
+            "userType": "anonymous",
+            "isAnonymous": true,
+            "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36",
+            "screenWidth": 1440,
+            "screenHeight": 900
+          }
+        },
+        {
+          "event": "page_loaded",
+          "timestamp": 1753299423925,
+          "userId": "anon_1753283242114_3r1jfp4wu",
+          "sessionId": "mdgd7hkurnjpi79nxfm",
+          "data": {
+            "hasUser": false,
+            "userType": "anonymous",
+            "isAnonymous": true,
+            "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36",
+            "screenWidth": 1440,
+            "screenHeight": 900
+          }
+        },
+        {
+          "event": "page_loaded",
+          "timestamp": 1753299424311,
+          "userId": "anon_1753283242114_3r1jfp4wu",
+          "sessionId": "mdgd7hkurnjpi79nxfm",
+          "data": {
+            "hasUser": false,
+            "userType": "anonymous",
+            "isAnonymous": true,
+            "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36",
+            "screenWidth": 1440,
+            "screenHeight": 900
+          }
+        },
+        {
+          "event": "page_loaded",
+          "timestamp": 1753299769175,
+          "userId": "anon_1753283242114_3r1jfp4wu",
+          "sessionId": "mdgdew4fj13utji9zo8",
+          "data": {
+            "hasUser": false,
+            "userType": "anonymous",
+            "isAnonymous": true,
+            "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36",
+            "screenWidth": 1440,
+            "screenHeight": 900
+          }
+        },
+        {
+          "event": "page_loaded",
+          "timestamp": 1753299769816,
+          "userId": "anon_1753283242114_3r1jfp4wu",
+          "sessionId": "mdgdew4fj13utji9zo8",
+          "data": {
+            "hasUser": false,
+            "userType": "anonymous",
+            "isAnonymous": true,
+            "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36",
+            "screenWidth": 1440,
+            "screenHeight": 900
+          }
+        }
+      ],
+      "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36",
+      "screenWidth": 1440,
+      "screenHeight": 900,
+      "firstVisit": 1753275593437,
+      "lastActivity": 1753299771819,
+      "totalSessions": 5,
+      "totalScans": 0
+    },
+    "updatedAt": "2025-07-23T19:42:52.198Z"
+  },
+  "anon_1753322742789_gv1hcm4m2": {
+    "events": [
+      {
+        "event": "page_loaded",
+        "timestamp": 1753322742789,
+        "userId": "anon_1753322742789_gv1hcm4m2",
+        "sessionId": "mdgr3ap7hid83285tuf",
+        "data": {
+          "hasUser": false,
+          "userType": "anonymous",
+          "isAnonymous": true,
+          "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36",
+          "screenWidth": 1440,
+          "screenHeight": 900
+        }
+      },
+      {
+        "event": "page_loaded",
+        "timestamp": 1753322743667,
+        "userId": "anon_1753322742789_gv1hcm4m2",
+        "sessionId": "mdgr3ap7hid83285tuf",
+        "data": {
+          "hasUser": false,
+          "userType": "anonymous",
+          "isAnonymous": true,
+          "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36",
+          "screenWidth": 1440,
+          "screenHeight": 900
+        }
+      },
+      {
+        "event": "show_education_clicked",
+        "timestamp": 1753322766119,
+        "userId": "anon_1753322742789_gv1hcm4m2",
+        "sessionId": "mdgr3ap7hid83285tuf",
+        "data": {
+          "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36",
+          "screenWidth": 1440,
+          "screenHeight": 900
+        }
+      },
+      {
+        "event": "page_loaded",
+        "timestamp": 1753322781780,
+        "userId": "anon_1753322742789_gv1hcm4m2",
+        "sessionId": "mdgr3ap7hid83285tuf",
+        "data": {
+          "hasUser": false,
+          "userType": "anonymous",
+          "isAnonymous": true,
+          "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36",
+          "screenWidth": 1440,
+          "screenHeight": 900
+        }
+      },
+      {
+        "event": "show_education_clicked",
+        "timestamp": 1753322785306,
+        "userId": "anon_1753322742789_gv1hcm4m2",
+        "sessionId": "mdgr3ap7hid83285tuf",
+        "data": {
+          "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36",
+          "screenWidth": 1440,
+          "screenHeight": 900
+        }
+      },
+      {
+        "event": "page_loaded",
+        "timestamp": 1753322868011,
+        "userId": "anon_1753322742789_gv1hcm4m2",
+        "sessionId": "mdgr3ap7hid83285tuf",
+        "data": {
+          "hasUser": false,
+          "userType": "anonymous",
+          "isAnonymous": true,
+          "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36",
+          "screenWidth": 1440,
+          "screenHeight": 900
+        }
+      },
+      {
+        "event": "page_loaded",
+        "timestamp": 1753323556564,
+        "userId": "anon_1753322742789_gv1hcm4m2",
+        "sessionId": "mdgrkqedy1nzdr7mb4",
+        "data": {
+          "hasUser": false,
+          "userType": "anonymous",
+          "isAnonymous": true,
+          "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36",
+          "screenWidth": 1440,
+          "screenHeight": 900
+        }
+      },
+      {
+        "event": "page_loaded",
+        "timestamp": 1753323556944,
+        "userId": "anon_1753322742789_gv1hcm4m2",
+        "sessionId": "mdgrkqedy1nzdr7mb4",
+        "data": {
+          "hasUser": false,
+          "userType": "anonymous",
+          "isAnonymous": true,
+          "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36",
+          "screenWidth": 1440,
+          "screenHeight": 900
+        }
+      },
+      {
+        "event": "show_education_clicked",
+        "timestamp": 1753323717817,
+        "userId": null,
+        "sessionId": "mdgro71b5atcnmcolxo",
+        "data": {
+          "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36",
+          "screenWidth": 1440,
+          "screenHeight": 900
+        }
+      },
+      {
+        "event": "show_education_clicked",
+        "timestamp": 1753323717817,
+        "userId": null,
+        "sessionId": "mdgro71b5atcnmcolxo",
+        "data": {
+          "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36",
+          "screenWidth": 1440,
+          "screenHeight": 900
+        }
+      },
+      {
+        "event": "show_education_clicked",
+        "timestamp": 1753323723334,
+        "userId": null,
+        "sessionId": "mdgro71b5atcnmcolxo",
+        "data": {
+          "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36",
+          "screenWidth": 1440,
+          "screenHeight": 900
+        }
+      },
+      {
+        "event": "show_education_clicked",
+        "timestamp": 1753323752007,
+        "userId": null,
+        "sessionId": "mdgro71b5atcnmcolxo",
+        "data": {
+          "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36",
+          "screenWidth": 1440,
+          "screenHeight": 900
+        }
+      },
+      {
+        "event": "show_education_clicked",
+        "timestamp": 1753323752007,
+        "userId": null,
+        "sessionId": "mdgro71b5atcnmcolxo",
+        "data": {
+          "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36",
+          "screenWidth": 1440,
+          "screenHeight": 900
+        }
+      },
+      {
+        "event": "page_loaded",
+        "timestamp": 1753323760473,
+        "userId": "anon_1753322742789_gv1hcm4m2",
+        "sessionId": "mdgro71b5atcnmcolxo",
+        "data": {
+          "hasUser": false,
+          "userType": "anonymous",
+          "isAnonymous": true,
+          "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36",
+          "screenWidth": 1440,
+          "screenHeight": 900
+        }
+      },
+      {
+        "event": "page_loaded",
+        "timestamp": 1753323760475,
+        "userId": "anon_1753322742789_gv1hcm4m2",
+        "sessionId": "mdgro71b5atcnmcolxo",
+        "data": {
+          "hasUser": false,
+          "userType": "anonymous",
+          "isAnonymous": true,
+          "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36",
+          "screenWidth": 1440,
+          "screenHeight": 900
+        }
+      },
+      {
+        "event": "page_loaded",
+        "timestamp": 1753323894878,
+        "userId": "anon_1753322742789_gv1hcm4m2",
+        "sessionId": "mdgrrzmsr9uoncvzq78",
+        "data": {
+          "hasUser": false,
+          "userType": "anonymous",
+          "isAnonymous": true,
+          "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36",
+          "screenWidth": 1440,
+          "screenHeight": 900
+        }
+      },
+      {
+        "event": "page_loaded",
+        "timestamp": 1753323895594,
+        "userId": "anon_1753322742789_gv1hcm4m2",
+        "sessionId": "mdgrrzmsr9uoncvzq78",
+        "data": {
+          "hasUser": false,
+          "userType": "anonymous",
+          "isAnonymous": true,
+          "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36",
+          "screenWidth": 1440,
+          "screenHeight": 900
+        }
+      },
+      {
+        "event": "page_loaded",
+        "timestamp": 1753323932559,
+        "userId": "anon_1753322742789_gv1hcm4m2",
+        "sessionId": "mdgrssp8om8tggdomhk",
+        "data": {
+          "hasUser": false,
+          "userType": "anonymous",
+          "isAnonymous": true,
+          "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36",
+          "screenWidth": 1440,
+          "screenHeight": 900
+        }
+      },
+      {
+        "event": "page_loaded",
+        "timestamp": 1753323932899,
+        "userId": "anon_1753322742789_gv1hcm4m2",
+        "sessionId": "mdgrssp8om8tggdomhk",
+        "data": {
+          "hasUser": false,
+          "userType": "anonymous",
+          "isAnonymous": true,
+          "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36",
+          "screenWidth": 1440,
+          "screenHeight": 900
+        }
+      },
+      {
+        "event": "page_loaded",
+        "timestamp": 1753323967192,
+        "userId": "anon_1753322742789_gv1hcm4m2",
+        "sessionId": "mdgrtjfnmsskzswlwq",
+        "data": {
+          "hasUser": false,
+          "userType": "anonymous",
+          "isAnonymous": true,
+          "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36",
+          "screenWidth": 1440,
+          "screenHeight": 900
+        }
+      },
+      {
+        "event": "page_loaded",
+        "timestamp": 1753323968293,
+        "userId": "anon_1753322742789_gv1hcm4m2",
+        "sessionId": "mdgrtjfnmsskzswlwq",
+        "data": {
+          "hasUser": false,
+          "userType": "anonymous",
+          "isAnonymous": true,
+          "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36",
+          "screenWidth": 1440,
+          "screenHeight": 900
+        }
+      },
+      {
+        "event": "page_loaded",
+        "timestamp": 1753324090832,
+        "userId": "anon_1753322742789_gv1hcm4m2",
+        "sessionId": "mdgrw6u3lq8y2bxmv7",
+        "data": {
+          "hasUser": false,
+          "userType": "anonymous",
+          "isAnonymous": true,
+          "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36",
+          "screenWidth": 1440,
+          "screenHeight": 900
+        }
+      },
+      {
+        "event": "page_loaded",
+        "timestamp": 1753324091368,
+        "userId": "anon_1753322742789_gv1hcm4m2",
+        "sessionId": "mdgrw6u3lq8y2bxmv7",
+        "data": {
+          "hasUser": false,
+          "userType": "anonymous",
+          "isAnonymous": true,
+          "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36",
+          "screenWidth": 1440,
+          "screenHeight": 900
+        }
+      },
+      {
+        "event": "page_loaded",
+        "timestamp": 1753324329974,
+        "userId": "anon_1753322742789_gv1hcm4m2",
+        "sessionId": "mdgs1bcbx2ybo5r6ka",
+        "data": {
+          "hasUser": false,
+          "userType": "anonymous",
+          "isAnonymous": true,
+          "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36",
+          "screenWidth": 1440,
+          "screenHeight": 900
+        }
+      },
+      {
+        "event": "page_loaded",
+        "timestamp": 1753324330420,
+        "userId": "anon_1753322742789_gv1hcm4m2",
+        "sessionId": "mdgs1bcbx2ybo5r6ka",
+        "data": {
+          "hasUser": false,
+          "userType": "anonymous",
+          "isAnonymous": true,
+          "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36",
+          "screenWidth": 1440,
+          "screenHeight": 900
+        }
+      }
+    ],
+    "metadata": {
+      "events": [
+        {
+          "event": "page_loaded",
+          "timestamp": 1753322742789,
+          "userId": "anon_1753322742789_gv1hcm4m2",
+          "sessionId": "mdgr3ap7hid83285tuf",
+          "data": {
+            "hasUser": false,
+            "userType": "anonymous",
+            "isAnonymous": true,
+            "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36",
+            "screenWidth": 1440,
+            "screenHeight": 900
+          }
+        },
+        {
+          "event": "page_loaded",
+          "timestamp": 1753322743667,
+          "userId": "anon_1753322742789_gv1hcm4m2",
+          "sessionId": "mdgr3ap7hid83285tuf",
+          "data": {
+            "hasUser": false,
+            "userType": "anonymous",
+            "isAnonymous": true,
+            "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36",
+            "screenWidth": 1440,
+            "screenHeight": 900
+          }
+        },
+        {
+          "event": "show_education_clicked",
+          "timestamp": 1753322766119,
+          "userId": "anon_1753322742789_gv1hcm4m2",
+          "sessionId": "mdgr3ap7hid83285tuf",
+          "data": {
+            "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36",
+            "screenWidth": 1440,
+            "screenHeight": 900
+          }
+        },
+        {
+          "event": "page_loaded",
+          "timestamp": 1753322781780,
+          "userId": "anon_1753322742789_gv1hcm4m2",
+          "sessionId": "mdgr3ap7hid83285tuf",
+          "data": {
+            "hasUser": false,
+            "userType": "anonymous",
+            "isAnonymous": true,
+            "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36",
+            "screenWidth": 1440,
+            "screenHeight": 900
+          }
+        },
+        {
+          "event": "show_education_clicked",
+          "timestamp": 1753322785306,
+          "userId": "anon_1753322742789_gv1hcm4m2",
+          "sessionId": "mdgr3ap7hid83285tuf",
+          "data": {
+            "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36",
+            "screenWidth": 1440,
+            "screenHeight": 900
+          }
+        },
+        {
+          "event": "page_loaded",
+          "timestamp": 1753322868011,
+          "userId": "anon_1753322742789_gv1hcm4m2",
+          "sessionId": "mdgr3ap7hid83285tuf",
+          "data": {
+            "hasUser": false,
+            "userType": "anonymous",
+            "isAnonymous": true,
+            "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36",
+            "screenWidth": 1440,
+            "screenHeight": 900
+          }
+        },
+        {
+          "event": "page_loaded",
+          "timestamp": 1753323556564,
+          "userId": "anon_1753322742789_gv1hcm4m2",
+          "sessionId": "mdgrkqedy1nzdr7mb4",
+          "data": {
+            "hasUser": false,
+            "userType": "anonymous",
+            "isAnonymous": true,
+            "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36",
+            "screenWidth": 1440,
+            "screenHeight": 900
+          }
+        },
+        {
+          "event": "page_loaded",
+          "timestamp": 1753323556944,
+          "userId": "anon_1753322742789_gv1hcm4m2",
+          "sessionId": "mdgrkqedy1nzdr7mb4",
+          "data": {
+            "hasUser": false,
+            "userType": "anonymous",
+            "isAnonymous": true,
+            "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36",
+            "screenWidth": 1440,
+            "screenHeight": 900
+          }
+        },
+        {
+          "event": "show_education_clicked",
+          "timestamp": 1753323717817,
+          "userId": null,
+          "sessionId": "mdgro71b5atcnmcolxo",
+          "data": {
+            "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36",
+            "screenWidth": 1440,
+            "screenHeight": 900
+          }
+        },
+        {
+          "event": "show_education_clicked",
+          "timestamp": 1753323717817,
+          "userId": null,
+          "sessionId": "mdgro71b5atcnmcolxo",
+          "data": {
+            "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36",
+            "screenWidth": 1440,
+            "screenHeight": 900
+          }
+        },
+        {
+          "event": "show_education_clicked",
+          "timestamp": 1753323723334,
+          "userId": null,
+          "sessionId": "mdgro71b5atcnmcolxo",
+          "data": {
+            "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36",
+            "screenWidth": 1440,
+            "screenHeight": 900
+          }
+        },
+        {
+          "event": "show_education_clicked",
+          "timestamp": 1753323752007,
+          "userId": null,
+          "sessionId": "mdgro71b5atcnmcolxo",
+          "data": {
+            "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36",
+            "screenWidth": 1440,
+            "screenHeight": 900
+          }
+        },
+        {
+          "event": "show_education_clicked",
+          "timestamp": 1753323752007,
+          "userId": null,
+          "sessionId": "mdgro71b5atcnmcolxo",
+          "data": {
+            "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36",
+            "screenWidth": 1440,
+            "screenHeight": 900
+          }
+        },
+        {
+          "event": "page_loaded",
+          "timestamp": 1753323760473,
+          "userId": "anon_1753322742789_gv1hcm4m2",
+          "sessionId": "mdgro71b5atcnmcolxo",
+          "data": {
+            "hasUser": false,
+            "userType": "anonymous",
+            "isAnonymous": true,
+            "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36",
+            "screenWidth": 1440,
+            "screenHeight": 900
+          }
+        },
+        {
+          "event": "page_loaded",
+          "timestamp": 1753323760475,
+          "userId": "anon_1753322742789_gv1hcm4m2",
+          "sessionId": "mdgro71b5atcnmcolxo",
+          "data": {
+            "hasUser": false,
+            "userType": "anonymous",
+            "isAnonymous": true,
+            "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36",
+            "screenWidth": 1440,
+            "screenHeight": 900
+          }
+        },
+        {
+          "event": "page_loaded",
+          "timestamp": 1753323894878,
+          "userId": "anon_1753322742789_gv1hcm4m2",
+          "sessionId": "mdgrrzmsr9uoncvzq78",
+          "data": {
+            "hasUser": false,
+            "userType": "anonymous",
+            "isAnonymous": true,
+            "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36",
+            "screenWidth": 1440,
+            "screenHeight": 900
+          }
+        },
+        {
+          "event": "page_loaded",
+          "timestamp": 1753323895594,
+          "userId": "anon_1753322742789_gv1hcm4m2",
+          "sessionId": "mdgrrzmsr9uoncvzq78",
+          "data": {
+            "hasUser": false,
+            "userType": "anonymous",
+            "isAnonymous": true,
+            "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36",
+            "screenWidth": 1440,
+            "screenHeight": 900
+          }
+        },
+        {
+          "event": "page_loaded",
+          "timestamp": 1753323932559,
+          "userId": "anon_1753322742789_gv1hcm4m2",
+          "sessionId": "mdgrssp8om8tggdomhk",
+          "data": {
+            "hasUser": false,
+            "userType": "anonymous",
+            "isAnonymous": true,
+            "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36",
+            "screenWidth": 1440,
+            "screenHeight": 900
+          }
+        },
+        {
+          "event": "page_loaded",
+          "timestamp": 1753323932899,
+          "userId": "anon_1753322742789_gv1hcm4m2",
+          "sessionId": "mdgrssp8om8tggdomhk",
+          "data": {
+            "hasUser": false,
+            "userType": "anonymous",
+            "isAnonymous": true,
+            "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36",
+            "screenWidth": 1440,
+            "screenHeight": 900
+          }
+        },
+        {
+          "event": "page_loaded",
+          "timestamp": 1753323967192,
+          "userId": "anon_1753322742789_gv1hcm4m2",
+          "sessionId": "mdgrtjfnmsskzswlwq",
+          "data": {
+            "hasUser": false,
+            "userType": "anonymous",
+            "isAnonymous": true,
+            "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36",
+            "screenWidth": 1440,
+            "screenHeight": 900
+          }
+        },
+        {
+          "event": "page_loaded",
+          "timestamp": 1753323968293,
+          "userId": "anon_1753322742789_gv1hcm4m2",
+          "sessionId": "mdgrtjfnmsskzswlwq",
+          "data": {
+            "hasUser": false,
+            "userType": "anonymous",
+            "isAnonymous": true,
+            "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36",
+            "screenWidth": 1440,
+            "screenHeight": 900
+          }
+        },
+        {
+          "event": "page_loaded",
+          "timestamp": 1753324090832,
+          "userId": "anon_1753322742789_gv1hcm4m2",
+          "sessionId": "mdgrw6u3lq8y2bxmv7",
+          "data": {
+            "hasUser": false,
+            "userType": "anonymous",
+            "isAnonymous": true,
+            "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36",
+            "screenWidth": 1440,
+            "screenHeight": 900
+          }
+        },
+        {
+          "event": "page_loaded",
+          "timestamp": 1753324091368,
+          "userId": "anon_1753322742789_gv1hcm4m2",
+          "sessionId": "mdgrw6u3lq8y2bxmv7",
+          "data": {
+            "hasUser": false,
+            "userType": "anonymous",
+            "isAnonymous": true,
+            "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36",
+            "screenWidth": 1440,
+            "screenHeight": 900
+          }
+        },
+        {
+          "event": "page_loaded",
+          "timestamp": 1753324329974,
+          "userId": "anon_1753322742789_gv1hcm4m2",
+          "sessionId": "mdgs1bcbx2ybo5r6ka",
+          "data": {
+            "hasUser": false,
+            "userType": "anonymous",
+            "isAnonymous": true,
+            "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36",
+            "screenWidth": 1440,
+            "screenHeight": 900
+          }
+        },
+        {
+          "event": "page_loaded",
+          "timestamp": 1753324330420,
+          "userId": "anon_1753322742789_gv1hcm4m2",
+          "sessionId": "mdgs1bcbx2ybo5r6ka",
+          "data": {
+            "hasUser": false,
+            "userType": "anonymous",
+            "isAnonymous": true,
+            "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36",
+            "screenWidth": 1440,
+            "screenHeight": 900
+          }
+        }
+      ],
+      "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36",
+      "screenWidth": 1440,
+      "screenHeight": 900,
+      "firstVisit": 1753322742789,
+      "lastActivity": 1753324332421,
+      "totalSessions": 8,
+      "totalScans": 0
+    },
+    "updatedAt": "2025-07-24T02:32:13.115Z"
+  }
+}
