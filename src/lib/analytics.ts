@@ -61,56 +61,21 @@ class EnhancedAnalytics {
     }
   }
 
-  // Save analytics data to backend storage
+  // Save analytics data to backend storage using Server Actions
   private async saveToBackend(): Promise<void> {
     if (!this.userId) return
     
     try {
-      // Use database storage for persistent analytics
-      const response = await fetch('/api/analytics/database', {
-        method: 'POST',
-        headers: {
-          'Content-Type': 'application/json',
-        },
-        body: JSON.stringify({
-          userId: this.userId,
-          events: this.events,
-          metadata: this.generateMetadata()
-        }),
-      })
+      // Import the server action dynamically to avoid bundling issues
+      const { saveAnalyticsData } = await import('@/lib/data-access')
       
-      if (!response.ok) {
-        console.error('Failed to save analytics to database')
-        // Fallback to old file-based system if database fails
-        await this.saveToFileFallback()
-      }
+      await saveAnalyticsData({
+        userId: this.userId,
+        events: this.events,
+        metadata: this.generateMetadata()
+      })
     } catch (error) {
       console.error('Error saving analytics to database:', error)
-      // Fallback to old file-based system if database fails
-      await this.saveToFileFallback()
-    }
-  }
-
-  // Fallback to file-based analytics if database fails
-  private async saveToFileFallback(): Promise<void> {
-    try {
-      const response = await fetch('/api/analytics/anonymous', {
-        method: 'POST',
-        headers: {
-          'Content-Type': 'application/json',
-        },
-        body: JSON.stringify({
-          userId: this.userId,
-          events: this.events,
-          metadata: this.generateMetadata()
-        }),
-      })
-      
-      if (!response.ok) {
-        console.error('Fallback analytics save also failed')
-      }
-    } catch (error) {
-      console.error('Error saving fallback analytics:', error)
     }
   }
 
