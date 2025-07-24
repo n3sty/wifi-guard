@@ -66,7 +66,34 @@ class EnhancedAnalytics {
     if (!this.userId) return
     
     try {
-      // Use anonymous storage for both anonymous and authenticated users
+      // Use database storage for persistent analytics
+      const response = await fetch('/api/analytics/database', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify({
+          userId: this.userId,
+          events: this.events,
+          metadata: this.generateMetadata()
+        }),
+      })
+      
+      if (!response.ok) {
+        console.error('Failed to save analytics to database')
+        // Fallback to old file-based system if database fails
+        await this.saveToFileFallback()
+      }
+    } catch (error) {
+      console.error('Error saving analytics to database:', error)
+      // Fallback to old file-based system if database fails
+      await this.saveToFileFallback()
+    }
+  }
+
+  // Fallback to file-based analytics if database fails
+  private async saveToFileFallback(): Promise<void> {
+    try {
       const response = await fetch('/api/analytics/anonymous', {
         method: 'POST',
         headers: {
@@ -80,10 +107,10 @@ class EnhancedAnalytics {
       })
       
       if (!response.ok) {
-        console.error('Failed to save analytics to backend')
+        console.error('Fallback analytics save also failed')
       }
     } catch (error) {
-      console.error('Error saving analytics:', error)
+      console.error('Error saving fallback analytics:', error)
     }
   }
 
@@ -144,7 +171,7 @@ class EnhancedAnalytics {
 
   getSessionEvents(): AnalyticsEvent[] {
     return this.events.filter(event => 
-      event.data?.sessionId === this.sessionId
+      event.sessionId === this.sessionId
     )
   }
 

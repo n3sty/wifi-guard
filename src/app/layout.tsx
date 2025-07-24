@@ -1,7 +1,8 @@
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
-import { ClerkProvider } from '@clerk/nextjs'
+import { ClerkProvider } from "@clerk/nextjs";
 import "./globals.css";
+import Header from "@/components/Header";
 
 const inter = Inter({
   subsets: ["latin"],
@@ -69,40 +70,15 @@ export default function RootLayout({
   return (
     <ClerkProvider>
       <html lang="en" suppressHydrationWarning>
-        <head>
-          {/* Preconnect to external domains for performance */}
-          <link rel="preconnect" href="https://fonts.googleapis.com" />
-          <link
-            rel="preconnect"
-            href="https://fonts.gstatic.com"
-            crossOrigin="anonymous"
-          />
-
-          {/* Favicon and app icons */}
-          <link rel="icon" href="/favicon.ico" sizes="any" />
-          <link rel="icon" href="/icon.svg" type="image/svg+xml" />
-          <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
-          <link rel="manifest" href="/manifest.json" />
-
-          {/* Security headers */}
-          <meta httpEquiv="X-Content-Type-Options" content="nosniff" />
-          <meta httpEquiv="X-XSS-Protection" content="1; mode=block" />
-          <meta
-            httpEquiv="Referrer-Policy"
-            content="strict-origin-when-cross-origin"
-          />
-
-          {/* Accessibility meta tags */}
-          <meta name="application-name" content="WiFi Guard" />
-          <meta name="msapplication-TileColor" content="#3b82f6" />
-          <meta name="msapplication-config" content="/browserconfig.xml" />
-        </head>
-        <body className={`${inter.variable} antialiased`}>
-          {/* Main content wrapper with proper landmark */}
-          <main id="main-content" role="main" tabIndex={-1}>
-            {children}
-          </main>
-
+        <body
+          className={`${inter.variable} antialiased min-h-screen bg-slate-50 dark:bg-gray-900 transition-colors duration-200 w-full`}
+        >
+          <div className="w-full">
+            {/* Main content wrapper with proper landmark */}
+            <main id="main-content" role="main" tabIndex={-1}>
+              {children}
+            </main>
+          </div>
           {/* Live region for announcements */}
           <div
             id="announcements"

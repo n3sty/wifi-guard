@@ -1,0 +1,64 @@
+// This is your Prisma schema file,
+// learn more about it in the docs: https://pris.ly/d/prisma-schema
+
+// Looking for ways to speed up your queries, or scale easily with your serverless or edge functions?
+// Try Prisma Accelerate: https://pris.ly/cli/accelerate-init
+
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "postgresql"
+  url      = env("DATABASE_URL")
+}
+
+model User {
+  id        String   @id @default(cuid())
+  userId    String   @unique
+  isAnonymous Boolean @default(true)
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
+  
+  // Analytics data
+  events    AnalyticsEvent[]
+  sessions  UserSession[]
+  
+  @@map("users")
+}
+
+model UserSession {
+  id          String   @id @default(cuid())
+  sessionId   String   @unique
+  userId      String
+  user        User     @relation(fields: [userId], references: [id], onDelete: Cascade)
+  
+  startedAt   DateTime @default(now())
+  lastActivity DateTime @updatedAt
+  userAgent   String?
+  screenWidth Int?
+  screenHeight Int?
+  
+  events      AnalyticsEvent[]
+  
+  @@map("user_sessions")
+}
+
+model AnalyticsEvent {
+  id          String   @id @default(cuid())
+  event       String
+  timestamp   DateTime @default(now())
+  
+  userId      String
+  user        User     @relation(fields: [userId], references: [id], onDelete: Cascade)
+  
+  sessionId   String
+  session     UserSession @relation(fields: [sessionId], references: [id], onDelete: Cascade)
+  
+  // Event data stored as JSON
+  data        Json?
+  
+  @@map("analytics_events")
+  @@index([event])
+  @@index([timestamp])
+}

@@ -261,7 +261,7 @@ export function SecurityTips({
         duration: 0.25,
         ease: [0.4, 0, 0.2, 1],
       }}
-      className="bg-white rounded-xl p-6 border border-gray-200 shadow-lg"
+      className="space-y-4"
     >
       {/* Header with Back Button */}
       <motion.div
@@ -291,169 +291,208 @@ export function SecurityTips({
         </div>
       </motion.div>
 
-      <div className="space-y-6">
-        {/* Context-specific tips based on findings - MOVED TO TOP */}
-        {contextTips.length > 0 && (
-          <motion.div
-            initial={{ opacity: 0 }}
-            animate={{ opacity: 1 }}
-            transition={{ delay: 0.3 }}
-          >
-            <h4 className="font-semibold text-gray-900 mb-4">
-              Based on Your Network Analysis:
-            </h4>
-            <div className="space-y-3">
-              {contextTips.map((tip, index) => {
-                const colors = getTipColor(tip.priority);
-                return (
-                  <motion.div
-                    key={`context-${index}`}
-                    className={`flex items-start space-x-3 p-3 rounded-lg border ${colors.bg}`}
-                    initial={{ opacity: 0, y: 10 }}
-                    animate={{ opacity: 1, y: 0 }}
-                    transition={{ delay: 0.4 + index * 0.1 }}
-                  >
-                    <div
-                      className={`w-2 h-2 rounded-full mt-2 flex-shrink-0 ${colors.dot}`}
-                    ></div>
-                    <p
-                      className={`leading-relaxed text-sm font-medium ${colors.text}`}
+      {/* Context-specific tips based on findings */}
+      {contextTips.length > 0 && (
+        <motion.div
+          className="bg-white rounded-xl p-6 border border-gray-200 shadow-sm"
+          initial={{ opacity: 0, x: -30 }}
+          animate={{ opacity: 1, x: 0 }}
+          transition={{ delay: 0.3, duration: 0.4 }}
+        >
+          <div className="flex items-start space-x-4">
+            <div className="mt-1">
+              <div className="!size-6 rounded-lg bg-orange-100 flex items-center justify-center">
+                <InfoIcon className="!size-4 text-orange-600" />
+              </div>
+            </div>
+            <div className="flex-1">
+              <div className="flex items-center justify-between mb-3">
+                <h4 className="text-gray-900 font-bold text-lg">
+                  Based on Your Network Analysis
+                </h4>
+                <span className="px-3 py-1 rounded-full text-xs font-semibold bg-orange-100 text-orange-700">
+                  CONTEXT
+                </span>
+              </div>
+              <div className="space-y-3">
+                {contextTips.map((tip, index) => {
+                  const colors = getTipColor(tip.priority);
+                  return (
+                    <motion.div
+                      key={`context-${index}`}
+                      className={`flex items-start space-x-3 p-3 rounded-lg border ${colors.bg}`}
+                      initial={{ opacity: 0, y: 10 }}
+                      animate={{ opacity: 1, y: 0 }}
+                      transition={{ delay: 0.4 + index * 0.1 }}
                     >
-                      {tip.text}
-                    </p>
-                  </motion.div>
-                );
-              })}
-            </div>
-          </motion.div>
-        )}
-
-        {/* Status-specific tips - NOW SECOND */}
-        {statusTips.length > 0 && (
-          <motion.div
-            className={
-              contextTips.length > 0 ? "border-t border-gray-200 pt-6" : ""
-            }
-            initial={{ opacity: 0 }}
-            animate={{ opacity: 1 }}
-            transition={{ delay: contextTips.length > 0 ? 0.6 : 0.3 }}
-          >
-            <h4 className="font-semibold text-gray-900 mb-4">
-              What to do next:
-            </h4>
-            <div className="space-y-3">
-              {statusTips.map((tip, index) => {
-                const colors = getTipColor(tip.priority);
-                return (
-                  <motion.div
-                    key={`status-${index}`}
-                    className={`flex items-start space-x-3 p-4 rounded-lg border ${colors.bg}`}
-                    initial={{ opacity: 0, x: -20 }}
-                    animate={{ opacity: 1, x: 0 }}
-                    transition={{
-                      delay: (contextTips.length > 0 ? 0.7 : 0.4) + index * 0.1,
-                    }}
-                  >
-                    <div
-                      className={`w-6 h-6 rounded-full flex items-center justify-center text-xs font-bold flex-shrink-0 mt-0.5 ${colors.number}`}
-                    >
-                      {index + 1}
-                    </div>
-                    <p className={`leading-relaxed font-medium ${colors.text}`}>
-                      {tip.text}
-                    </p>
-                  </motion.div>
-                );
-              })}
-            </div>
-          </motion.div>
-        )}
-
-        {/* More Tips Section with improved animations */}
-        {additionalTips.length > 0 && (
-          <motion.div
-            className="border-t border-gray-200 pt-6"
-            initial={{ opacity: 0 }}
-            animate={{ opacity: 1 }}
-            transition={{ delay: 0.8 }}
-          >
-            <div className="flex items-center justify-between mb-4">
-              <h4 className="font-semibold text-gray-900">
-                {showMoreTips
-                  ? "Additional Security Tips"
-                  : "General WiFi Safety"}
-              </h4>
-              <motion.button
-                onClick={() => setShowMoreTips(!showMoreTips)}
-                className="text-blue-600 hover:text-blue-700 text-sm font-medium underline-offset-2 hover:underline transition-colors"
-                whileHover={{ scale: 1.02 }}
-                whileTap={{ scale: 0.98 }}
-              >
-                {showMoreTips ? "show less" : "more tips"}
-              </motion.button>
-            </div>
-
-            <motion.div
-              animate={{
-                height: showMoreTips ? "auto" : "auto",
-              }}
-              transition={{
-                duration: 0.3,
-                ease: [0.4, 0, 0.2, 1],
-              }}
-              className="overflow-hidden"
-            >
-              <AnimatePresence mode="wait">
-                <motion.div
-                  key={showMoreTips ? "expanded" : "collapsed"}
-                  initial={{ opacity: 0 }}
-                  animate={{ opacity: 1 }}
-                  exit={{ opacity: 0 }}
-                  transition={{ duration: 0.2 }}
-                  className="space-y-2"
-                >
-                  {(showMoreTips
-                    ? [...additionalTips].sort((a, b) => {
-                        const priorityOrder = {
-                          critical: 0,
-                          important: 1,
-                          general: 2,
-                          optional: 3,
-                        };
-                        return (
-                          priorityOrder[a.priority] - priorityOrder[b.priority]
-                        );
-                      })
-                    : additionalTips.slice(0, 3)
-                  ).map((tip, index) => {
-                    const colors = getTipColor(tip.priority);
-                    return (
-                      <motion.div
-                        key={`general-${index}`}
-                        className="flex items-start space-x-2"
-                        initial={{ opacity: 0, y: showMoreTips ? 10 : 0 }}
-                        animate={{ opacity: 1, y: 0 }}
-                        exit={{ opacity: 0, y: showMoreTips ? -10 : 0 }}
-                        transition={{
-                          duration: 0.2,
-                          delay: index * 0.03,
-                        }}
+                      <div
+                        className={`w-2 h-2 rounded-full mt-2 flex-shrink-0 ${colors.dot}`}
+                      ></div>
+                      <p
+                        className={`leading-relaxed text-sm font-medium ${colors.text}`}
                       >
-                        <div
-                          className={`w-2 h-2 rounded-full mt-2 flex-shrink-0 ${colors.dot}`}
-                        ></div>
-                        <p className={`text-sm leading-relaxed ${colors.text}`}>
-                          {tip.text}
-                        </p>
-                      </motion.div>
-                    );
-                  })}
-                </motion.div>
-              </AnimatePresence>
-            </motion.div>
-          </motion.div>
-        )}
-      </div>
+                        {tip.text}
+                      </p>
+                    </motion.div>
+                  );
+                })}
+              </div>
+            </div>
+          </div>
+        </motion.div>
+      )}
+
+      {/* Status-specific tips */}
+      {statusTips.length > 0 && (
+        <motion.div
+          className="bg-white rounded-xl p-6 border border-gray-200 shadow-sm"
+          initial={{ opacity: 0, x: -30 }}
+          animate={{ opacity: 1, x: 0 }}
+          transition={{ delay: 0.5, duration: 0.4 }}
+        >
+          <div className="flex items-start space-x-4">
+            <div className="mt-1">
+              <div className="!size-6 rounded-lg bg-blue-100 flex items-center justify-center">
+                <InfoIcon className="!size-4 text-blue-600" />
+              </div>
+            </div>
+            <div className="flex-1">
+              <div className="flex items-center justify-between mb-3">
+                <h4 className="text-gray-900 font-bold text-lg">
+                  What to do next
+                </h4>
+                <span className="px-3 py-1 rounded-full text-xs font-semibold bg-blue-100 text-blue-700">
+                  ACTION
+                </span>
+              </div>
+              <div className="space-y-3">
+                {statusTips.map((tip, index) => {
+                  const colors = getTipColor(tip.priority);
+                  return (
+                    <motion.div
+                      key={`status-${index}`}
+                      className={`flex items-start space-x-3 p-4 rounded-lg border ${colors.bg}`}
+                      initial={{ opacity: 0, x: -20 }}
+                      animate={{ opacity: 1, x: 0 }}
+                      transition={{
+                        delay: 0.6 + index * 0.1,
+                      }}
+                    >
+                      <div
+                        className={`w-6 h-6 rounded-full flex items-center justify-center text-xs font-bold flex-shrink-0 mt-0.5 ${colors.number}`}
+                      >
+                        {index + 1}
+                      </div>
+                      <p className={`leading-relaxed font-medium ${colors.text}`}>
+                        {tip.text}
+                      </p>
+                    </motion.div>
+                  );
+                })}
+              </div>
+            </div>
+          </div>
+        </motion.div>
+      )}
+
+      {/* Additional Tips Section */}
+      {additionalTips.length > 0 && (
+        <motion.div
+          className="bg-white rounded-xl p-6 border border-gray-200 shadow-sm"
+          initial={{ opacity: 0, x: -30 }}
+          animate={{ opacity: 1, x: 0 }}
+          transition={{ delay: 0.7, duration: 0.4 }}
+        >
+          <div className="flex items-start space-x-4">
+            <div className="mt-1">
+              <div className="!size-6 rounded-lg bg-green-100 flex items-center justify-center">
+                <InfoIcon className="!size-4 text-green-600" />
+              </div>
+            </div>
+            <div className="flex-1">
+              <div className="flex items-center justify-between mb-3">
+                <h4 className="text-gray-900 font-bold text-lg">
+                  {showMoreTips
+                    ? "Additional Security Tips"
+                    : "General WiFi Safety"}
+                </h4>
+                <div className="flex items-center space-x-2">
+                  <span className="px-3 py-1 rounded-full text-xs font-semibold bg-green-100 text-green-700">
+                    TIPS
+                  </span>
+                  <motion.button
+                    onClick={() => setShowMoreTips(!showMoreTips)}
+                    className="text-blue-600 hover:text-blue-700 text-sm font-medium underline-offset-2 hover:underline transition-colors"
+                    whileHover={{ scale: 1.02 }}
+                    whileTap={{ scale: 0.98 }}
+                  >
+                    {showMoreTips ? "show less" : "more tips"}
+                  </motion.button>
+                </div>
+              </div>
+
+              <motion.div
+                animate={{
+                  height: showMoreTips ? "auto" : "auto",
+                }}
+                transition={{
+                  duration: 0.3,
+                  ease: [0.4, 0, 0.2, 1],
+                }}
+                className="overflow-hidden"
+              >
+                <AnimatePresence mode="wait">
+                  <motion.div
+                    key={showMoreTips ? "expanded" : "collapsed"}
+                    initial={{ opacity: 0 }}
+                    animate={{ opacity: 1 }}
+                    exit={{ opacity: 0 }}
+                    transition={{ duration: 0.2 }}
+                    className="space-y-2"
+                  >
+                    {(showMoreTips
+                      ? [...additionalTips].sort((a, b) => {
+                          const priorityOrder = {
+                            critical: 0,
+                            important: 1,
+                            general: 2,
+                            optional: 3,
+                          };
+                          return (
+                            priorityOrder[a.priority] - priorityOrder[b.priority]
+                          );
+                        })
+                      : additionalTips.slice(0, 3)
+                    ).map((tip, index) => {
+                      const colors = getTipColor(tip.priority);
+                      return (
+                        <motion.div
+                          key={`general-${index}`}
+                          className="flex items-start space-x-2"
+                          initial={{ opacity: 0, y: showMoreTips ? 10 : 0 }}
+                          animate={{ opacity: 1, y: 0 }}
+                          exit={{ opacity: 0, y: showMoreTips ? -10 : 0 }}
+                          transition={{
+                            duration: 0.2,
+                            delay: index * 0.03,
+                          }}
+                        >
+                          <div
+                            className={`w-2 h-2 rounded-full mt-2 flex-shrink-0 ${colors.dot}`}
+                          ></div>
+                          <p className={`text-sm leading-relaxed ${colors.text}`}>
+                            {tip.text}
+                          </p>
+                        </motion.div>
+                      );
+                    })}
+                  </motion.div>
+                </AnimatePresence>
+              </motion.div>
+            </div>
+          </div>
+        </motion.div>
+      )}
     </motion.div>
   );
 }
