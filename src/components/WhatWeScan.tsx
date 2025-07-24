@@ -75,7 +75,7 @@ export function WhatWeScan() {
               What does WiFi Guard check?
             </h3>
             <p className="text-gray-600 text-base">
-              Understanding what we scan (and what we can't)
+              Understanding what we scan (and what we can&apos;t)
             </p>
           </div>
           <motion.div
@@ -149,7 +149,7 @@ export function WhatWeScan() {
                 <div className="flex items-center gap-3 mb-6">
                   <XCircle className="h-6 w-6 text-red-600" />
                   <h4 className="text-xl font-bold text-gray-900">
-                    What We Can't Detect
+                    What We Can&apos;t Detect
                   </h4>
                 </div>
                 <div className="space-y-4">
