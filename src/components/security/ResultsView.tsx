@@ -32,9 +32,9 @@ export function ResultsView({
           color: "text-green-600",
           bgColor: "border-green-500",
           icon: (
-            <div className="w-16 h-16 rounded-full bg-green-100 flex items-center justify-center">
+            <div className="w-12 h-12 sm:w-16 sm:h-16 rounded-full bg-green-100 flex items-center justify-center">
               <svg
-                className="w-8 h-8 text-green-600"
+                className="w-6 h-6 sm:w-8 sm:h-8 text-green-600"
                 fill="none"
                 stroke="currentColor"
                 viewBox="0 0 24 24"
@@ -56,9 +56,9 @@ export function ResultsView({
           color: "text-yellow-600",
           bgColor: "border-yellow-500",
           icon: (
-            <div className="w-16 h-16 rounded-full bg-yellow-100 flex items-center justify-center">
+            <div className="w-12 h-12 sm:w-16 sm:h-16 rounded-full bg-yellow-100 flex items-center justify-center">
               <svg
-                className="w-8 h-8 text-yellow-600"
+                className="w-6 h-6 sm:w-8 sm:h-8 text-yellow-600"
                 fill="none"
                 stroke="currentColor"
                 viewBox="0 0 24 24"
@@ -80,9 +80,9 @@ export function ResultsView({
           color: "text-red-600",
           bgColor: "border-red-500",
           icon: (
-            <div className="w-16 h-16 rounded-full bg-red-100 flex items-center justify-center">
+            <div className="w-12 h-12 sm:w-16 sm:h-16 rounded-full bg-red-100 flex items-center justify-center">
               <svg
-                className="w-8 h-8 text-red-600"
+                className="w-6 h-6 sm:w-8 sm:h-8 text-red-600"
                 fill="none"
                 stroke="currentColor"
                 viewBox="0 0 24 24"
@@ -116,7 +116,7 @@ export function ResultsView({
     >
       {/* Main Result Card */}
       <motion.div
-        className={`border-2 rounded-xl p-8 text-center bg-white shadow-lg ${statusDisplay.bgColor}`}
+        className={`border-2 rounded-xl p-6 sm:p-8 text-center bg-white shadow-lg ${statusDisplay.bgColor}`}
         initial={{ opacity: 0, scale: 0.9 }}
         animate={{ opacity: 1, scale: 1 }}
         transition={{ duration: 0.4, delay: 0.1 }}
@@ -142,10 +142,10 @@ export function ResultsView({
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.4, delay: 0.3 }}
         >
-          <h2 className={`text-3xl font-bold mb-2 ${statusDisplay.color}`}>
+          <h2 className={`text-2xl sm:text-3xl font-bold mb-2 ${statusDisplay.color}`}>
             {statusDisplay.title}
           </h2>
-          <p className="text-gray-700 text-lg max-w-md mx-auto">
+          <p className="text-gray-700 text-base sm:text-lg max-w-md mx-auto">
             {statusDisplay.message}
           </p>
         </motion.div>
@@ -153,7 +153,7 @@ export function ResultsView({
 
       {/* Action Buttons */}
       <motion.div
-        className="grid grid-cols-1 md:grid-cols-3 gap-4"
+        className="grid grid-cols-1 sm:grid-cols-3 gap-3 sm:gap-4"
         initial={{ opacity: 0, y: 20 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.4, delay: 0.4 }}
@@ -163,7 +163,7 @@ export function ResultsView({
             trackShowEducation();
             onShowEducation();
           }}
-          className="py-3 px-4 bg-gray-100 text-gray-700 rounded-lg hover:bg-gray-200 transition-colors font-medium"
+          className="py-3 px-3 sm:px-4 bg-gray-100 text-gray-700 rounded-lg hover:bg-gray-200 transition-colors font-medium text-sm"
           whileHover={{ scale: 1.02, y: -1 }}
           whileTap={{ scale: 0.98 }}
           initial={{ opacity: 0, x: -20 }}
@@ -178,17 +178,18 @@ export function ResultsView({
             trackShowDetails();
             onShowDetails();
           }}
-          className="py-3 px-4 bg-gray-100 text-gray-700 rounded-lg hover:bg-gray-200 transition-colors font-medium relative"
+          className="py-3 px-3 sm:px-4 bg-gray-100 text-gray-700 rounded-lg hover:bg-gray-200 transition-colors font-medium relative text-sm"
           whileHover={{ scale: 1.02, y: -1 }}
           whileTap={{ scale: 0.98 }}
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ delay: 0.6 }}
         >
-          Technical Details
+          <span className="hidden sm:inline">Technical Details</span>
+          <span className="sm:hidden">Details</span>
           {issueCount.total > 0 && (
             <motion.div
-              className={`absolute -top-2 -right-2 w-6 h-6 rounded-full flex items-center justify-center text-xs font-bold text-white ${
+              className={`absolute -top-2 -right-2 w-5 h-5 sm:w-6 sm:h-6 rounded-full flex items-center justify-center text-xs font-bold text-white ${
                 issueCount.errors > 0 ? 'bg-red-500' : 'bg-yellow-500'
               }`}
               initial={{ scale: 0 }}
@@ -205,7 +206,7 @@ export function ResultsView({
             trackScanAgain();
             onScanAgain();
           }}
-          className="py-3 px-4 bg-blue-600 text-white rounded-lg hover:bg-blue-700 transition-colors font-medium"
+          className="py-3 px-3 sm:px-4 bg-blue-600 text-white rounded-lg hover:bg-blue-700 transition-colors font-medium text-sm"
           whileHover={{ scale: 1.02, y: -1 }}
           whileTap={{ scale: 0.98 }}
           initial={{ opacity: 0, x: 20 }}

@@ -24,7 +24,7 @@ export function ScanButton({ isChecking, onScan }: ScanButtonProps) {
         onClick={onScan}
         disabled={isChecking}
         className={`
-          w-full py-6 px-8 rounded-xl font-semibold text-xl
+          w-full py-4 px-6 sm:py-6 sm:px-8 rounded-xl font-semibold text-lg sm:text-xl
           ${
             isChecking
               ? "bg-gray-300 text-gray-500 cursor-not-allowed"
@@ -84,7 +84,7 @@ export function ScanButton({ isChecking, onScan }: ScanButtonProps) {
             </p>
 
             {/* Simple status indicators */}
-            <div className="flex items-center justify-center space-x-6 text-sm">
+            <div className="flex items-center justify-center space-x-4 sm:space-x-6 text-sm">
               <motion.div
                 className="flex items-center space-x-2"
                 initial={{ opacity: 0, x: -10 }}

@@ -34,7 +34,7 @@ export default function BlogPage() {
 
   return (
     <div className="min-h-screen bg-gradient-to-br from-slate-900 via-blue-900 to-slate-900">
-      <div className="container mx-auto px-4 py-8">
+      <div className="container mx-auto px-4 py-6 sm:py-8">
         {/* Header */}
         <motion.div
           initial={{ opacity: 0, y: -20 }}
@@ -43,19 +43,19 @@ export default function BlogPage() {
         >
           <div className="flex items-center justify-center gap-3 mb-4">
             <BookOpen className="h-8 w-8 text-blue-400" />
-            <h1 className="text-4xl font-bold text-white">WiFi Security Guide</h1>
+            <h1 className="text-3xl sm:text-4xl font-bold text-white">WiFi Security Guide</h1>
           </div>
-          <p className="text-xl text-slate-300 max-w-2xl mx-auto">
+          <p className="text-lg sm:text-xl text-slate-300 max-w-2xl mx-auto">
             Understanding what WiFi Guard checks and how to stay safer on public networks
           </p>
         </motion.div>
 
-        {/* Navigation back to main app */}
+        {/* Navigation */}
         <motion.div
-          initial={{ opacity: 0, x: -20 }}
-          animate={{ opacity: 1, x: 0 }}
+          initial={{ opacity: 0, y: 20 }}
+          animate={{ opacity: 1, y: 0 }}
           transition={{ delay: 0.1 }}
-          className="mb-8"
+          className="mb-8 flex flex-col sm:flex-row gap-4 items-start sm:items-center justify-between"
         >
           <Link 
             href="/"
@@ -63,6 +63,14 @@ export default function BlogPage() {
           >
             <ArrowRight className="h-4 w-4 rotate-180" />
             Back to WiFi Guard
+          </Link>
+          
+          <Link 
+            href="/security-info"
+            className="inline-flex items-center gap-2 px-4 py-2 bg-blue-600 text-white rounded-lg hover:bg-blue-700 transition-colors text-sm font-medium"
+          >
+            <Shield className="h-4 w-4" />
+            Complete Security Guide
           </Link>
         </motion.div>
 
@@ -85,7 +93,7 @@ export default function BlogPage() {
                   <h2 className="text-2xl font-bold text-white">{categoryName}</h2>
                 </div>
 
-                <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+                <div className="grid grid-cols-1 sm:grid-cols-1 md:grid-cols-2 gap-4 sm:gap-6">
                   {posts.map((post, postIndex) => (
                     <motion.div
                       key={post.id}
@@ -94,7 +102,7 @@ export default function BlogPage() {
                       transition={{ delay: 0.3 + categoryIndex * 0.1 + postIndex * 0.05 }}
                     >
                       <Link href={`/blog/${post.id}`}>
-                        <div className="bg-white/10 backdrop-blur-sm rounded-xl p-6 border border-white/20 hover:bg-white/15 transition-all duration-300 cursor-pointer group h-full">
+                        <div className="bg-white/10 backdrop-blur-sm rounded-xl p-4 sm:p-6 border border-white/20 hover:bg-white/15 transition-all duration-300 cursor-pointer group h-full">
                           <div className="flex items-start justify-between mb-3">
                             <div className="flex items-center gap-2 text-sm text-slate-400">
                               <Clock className="h-4 w-4" />
@@ -103,7 +111,7 @@ export default function BlogPage() {
                             <ArrowRight className="h-4 w-4 text-slate-400 group-hover:text-blue-400 transition-colors transform group-hover:translate-x-1" />
                           </div>
                           
-                          <h3 className="text-xl font-bold text-white mb-3 group-hover:text-blue-400 transition-colors">
+                          <h3 className="text-lg sm:text-xl font-bold text-white mb-3 group-hover:text-blue-400 transition-colors">
                             {post.title}
                           </h3>
                           
@@ -138,7 +146,7 @@ export default function BlogPage() {
           transition={{ delay: 0.6 }}
           className="mt-16 text-center"
         >
-          <div className="bg-white/5 backdrop-blur-sm rounded-xl p-6 border border-white/10">
+          <div className="bg-white/5 backdrop-blur-sm rounded-xl p-4 sm:p-6 border border-white/10">
             <p className="text-slate-400">
               Have questions about WiFi security? These guides explain what WiFi Guard checks
               and provide practical advice for staying safer on public networks.

@@ -1,9 +1,8 @@
 "use client";
 
-import { motion, AnimatePresence } from "framer-motion";
+import { motion } from "framer-motion";
 import { SecurityCheck, OverallStatus } from "@/types/security";
 import { useNetworkInfo } from "@/hooks/useNetworkInfo";
-import { useState } from "react";
 import { ArrowLeftIcon, InfoIcon } from "lucide-react";
 
 interface SecurityTipsProps {
@@ -23,7 +22,6 @@ export function SecurityTips({
   onBack,
 }: SecurityTipsProps) {
   const networkInfo = useNetworkInfo();
-  const [showMoreTips, setShowMoreTips] = useState(false);
 
   const getContextSpecificTips = (): TipWithPriority[] => {
     const tips: TipWithPriority[] = [];
@@ -159,57 +157,35 @@ export function SecurityTips({
     return tips.slice(0, 5); // Maximum 5 status tips
   };
 
-  const getAdditionalTips = (): TipWithPriority[] => {
-    const additionalTips = [
-      {
-        text: "Always verify network names with venue staff",
-        priority: "important" as const,
-      },
-      {
-        text: 'Look for "https://" in website address bars',
-        priority: "general" as const,
-      },
-      {
-        text: "Disable automatic WiFi connections",
-        priority: "important" as const,
-      },
-      {
-        text: "Use a reputable VPN for additional protection",
-        priority: "general" as const,
-      },
-      {
-        text: "Keep your device software updated",
-        priority: "general" as const,
-      },
-      {
-        text: "Enable two-factor authentication where possible",
-        priority: "general" as const,
-      },
-      {
-        text: "Avoid downloading files from unknown sources",
-        priority: "important" as const,
-      },
-      { text: "Log out of accounts when done", priority: "optional" as const },
-      {
-        text: "Be cautious of fake WiFi hotspots with similar names",
-        priority: "important" as const,
-      },
-    ];
+  const getImmediateActionTips = (): TipWithPriority[] => {
+    const immediateTips: TipWithPriority[] = [];
 
-    // Filter out tips that might be redundant with context-specific tips
-    const contextTips = getContextSpecificTips();
-    const contextTexts = contextTips.map((tip) => tip.text.toLowerCase());
+    // Only include tips that are directly actionable based on the current scan results
+    if (overallStatus === "danger") {
+      immediateTips.push({
+        text: "Consider switching to mobile data for sensitive activities",
+        priority: "critical",
+      });
+    }
 
-    return additionalTips.filter(
-      (tip) =>
-        !contextTexts.some(
-          (contextText) =>
-            (contextText.includes("verify") &&
-              tip.text.toLowerCase().includes("verify")) ||
-            (contextText.includes("https") &&
-              tip.text.toLowerCase().includes("https"))
-        )
-    );
+    if (overallStatus === "caution" || overallStatus === "danger") {
+      immediateTips.push({
+        text: "Verify this network name with venue staff before proceeding",
+        priority: "important",
+      });
+    }
+
+    // Add context-aware tips based on failed checks
+    const failedChecks = checks.filter(check => check.status === "failed");
+    
+    if (failedChecks.some(check => check.id === "https-check")) {
+      immediateTips.push({
+        text: "Only visit websites that show 'https://' and the lock icon",
+        priority: "important",
+      });
+    }
+
+    return immediateTips.slice(0, 3); // Maximum 3 immediate action tips
   };
 
   const getTipColor = (
@@ -249,7 +225,7 @@ export function SecurityTips({
 
   const contextTips = getContextSpecificTips();
   const statusTips = getStatusSpecificTips();
-  const additionalTips = getAdditionalTips();
+  const immediateActionTips = getImmediateActionTips();
 
   return (
     <motion.div
@@ -351,19 +327,11 @@ export function SecurityTips({
           transition={{ delay: 0.5, duration: 0.4 }}
         >
           <div className="flex items-start space-x-4">
-            <div className="mt-1">
-              <div className="!size-6 rounded-lg bg-blue-100 flex items-center justify-center">
-                <InfoIcon className="!size-4 text-blue-600" />
-              </div>
-            </div>
             <div className="flex-1">
-              <div className="flex items-center justify-between mb-3">
+              <div className="flex items-center mb-3">
                 <h4 className="text-gray-900 font-bold text-lg">
                   What to do next
                 </h4>
-                <span className="px-3 py-1 rounded-full text-xs font-semibold bg-blue-100 text-blue-700">
-                  ACTION
-                </span>
               </div>
               <div className="space-y-3">
                 {statusTips.map((tip, index) => {
@@ -383,7 +351,9 @@ export function SecurityTips({
                       >
                         {index + 1}
                       </div>
-                      <p className={`leading-relaxed font-medium ${colors.text}`}>
+                      <p
+                        className={`leading-relaxed font-medium ${colors.text}`}
+                      >
                         {tip.text}
                       </p>
                     </motion.div>
@@ -395,8 +365,8 @@ export function SecurityTips({
         </motion.div>
       )}
 
-      {/* Additional Tips Section */}
-      {additionalTips.length > 0 && (
+      {/* Immediate Actions Section */}
+      {immediateActionTips.length > 0 && (
         <motion.div
           className="bg-white rounded-xl p-6 border border-gray-200 shadow-sm"
           initial={{ opacity: 0, x: -30 }}
@@ -405,94 +375,74 @@ export function SecurityTips({
         >
           <div className="flex items-start space-x-4">
             <div className="mt-1">
-              <div className="!size-6 rounded-lg bg-green-100 flex items-center justify-center">
-                <InfoIcon className="!size-4 text-green-600" />
+              <div className="!size-6 rounded-lg bg-orange-100 flex items-center justify-center">
+                <InfoIcon className="!size-4 text-orange-600" />
               </div>
             </div>
             <div className="flex-1">
               <div className="flex items-center justify-between mb-3">
                 <h4 className="text-gray-900 font-bold text-lg">
-                  {showMoreTips
-                    ? "Additional Security Tips"
-                    : "General WiFi Safety"}
+                  Immediate Actions
                 </h4>
-                <div className="flex items-center space-x-2">
-                  <span className="px-3 py-1 rounded-full text-xs font-semibold bg-green-100 text-green-700">
-                    TIPS
-                  </span>
-                  <motion.button
-                    onClick={() => setShowMoreTips(!showMoreTips)}
-                    className="text-blue-600 hover:text-blue-700 text-sm font-medium underline-offset-2 hover:underline transition-colors"
-                    whileHover={{ scale: 1.02 }}
-                    whileTap={{ scale: 0.98 }}
-                  >
-                    {showMoreTips ? "show less" : "more tips"}
-                  </motion.button>
-                </div>
               </div>
-
-              <motion.div
-                animate={{
-                  height: showMoreTips ? "auto" : "auto",
-                }}
-                transition={{
-                  duration: 0.3,
-                  ease: [0.4, 0, 0.2, 1],
-                }}
-                className="overflow-hidden"
-              >
-                <AnimatePresence mode="wait">
-                  <motion.div
-                    key={showMoreTips ? "expanded" : "collapsed"}
-                    initial={{ opacity: 0 }}
-                    animate={{ opacity: 1 }}
-                    exit={{ opacity: 0 }}
-                    transition={{ duration: 0.2 }}
-                    className="space-y-2"
-                  >
-                    {(showMoreTips
-                      ? [...additionalTips].sort((a, b) => {
-                          const priorityOrder = {
-                            critical: 0,
-                            important: 1,
-                            general: 2,
-                            optional: 3,
-                          };
-                          return (
-                            priorityOrder[a.priority] - priorityOrder[b.priority]
-                          );
-                        })
-                      : additionalTips.slice(0, 3)
-                    ).map((tip, index) => {
-                      const colors = getTipColor(tip.priority);
-                      return (
-                        <motion.div
-                          key={`general-${index}`}
-                          className="flex items-start space-x-2"
-                          initial={{ opacity: 0, y: showMoreTips ? 10 : 0 }}
-                          animate={{ opacity: 1, y: 0 }}
-                          exit={{ opacity: 0, y: showMoreTips ? -10 : 0 }}
-                          transition={{
-                            duration: 0.2,
-                            delay: index * 0.03,
-                          }}
-                        >
-                          <div
-                            className={`w-2 h-2 rounded-full mt-2 flex-shrink-0 ${colors.dot}`}
-                          ></div>
-                          <p className={`text-sm leading-relaxed ${colors.text}`}>
-                            {tip.text}
-                          </p>
-                        </motion.div>
-                      );
-                    })}
-                  </motion.div>
-                </AnimatePresence>
-              </motion.div>
+              <div className="space-y-2">
+                {immediateActionTips.map((tip, index) => {
+                  const colors = getTipColor(tip.priority);
+                  return (
+                    <motion.div
+                      key={`immediate-${index}`}
+                      className="flex items-start space-x-2"
+                      initial={{ opacity: 0, y: 10 }}
+                      animate={{ opacity: 1, y: 0 }}
+                      transition={{
+                        duration: 0.2,
+                        delay: index * 0.1,
+                      }}
+                    >
+                      <div
+                        className={`w-2 h-2 rounded-full mt-2 flex-shrink-0 ${colors.dot}`}
+                      ></div>
+                      <p
+                        className={`text-sm leading-relaxed ${colors.text}`}
+                      >
+                        {tip.text}
+                      </p>
+                    </motion.div>
+                  );
+                })}
+              </div>
             </div>
           </div>
         </motion.div>
       )}
+
+      {/* Comprehensive Security Guide Link */}
+      <motion.div
+        className="bg-blue-50 border border-blue-200 rounded-xl p-6"
+        initial={{ opacity: 0, x: -30 }}
+        animate={{ opacity: 1, x: 0 }}
+        transition={{ delay: 0.8, duration: 0.4 }}
+      >
+        <div className="flex items-center justify-between">
+          <div className="flex-1">
+            <h4 className="text-blue-900 font-bold text-lg mb-2">
+              Want More Security Tips?
+            </h4>
+            <p className="text-blue-700 text-sm mb-4">
+              Learn about WiFi security protocols, common threats, and comprehensive safety practices.
+            </p>
+            <motion.button
+              onClick={() => window.open('/security-info', '_blank')}
+              className="inline-flex items-center gap-2 px-4 py-2 bg-blue-600 text-white rounded-lg hover:bg-blue-700 transition-colors font-medium text-sm"
+              whileHover={{ scale: 1.02 }}
+              whileTap={{ scale: 0.98 }}
+            >
+              <InfoIcon className="!size-4" />
+              Complete Security Guide
+            </motion.button>
+          </div>
+        </div>
+      </motion.div>
     </motion.div>
   );
 }

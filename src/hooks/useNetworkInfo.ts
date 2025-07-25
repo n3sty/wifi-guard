@@ -3,8 +3,17 @@
 import { useState, useEffect } from "react";
 
 interface NetworkInformation extends EventTarget {
-  type?: 'bluetooth' | 'cellular' | 'ethernet' | 'mixed' | 'none' | 'other' | 'unknown' | 'wifi' | 'wimax';
-  effectiveType?: 'slow-2g' | '2g' | '3g' | '4g';
+  type?:
+    | "bluetooth"
+    | "cellular"
+    | "ethernet"
+    | "mixed"
+    | "none"
+    | "other"
+    | "unknown"
+    | "wifi"
+    | "wimax";
+  effectiveType?: "slow-2g" | "2g" | "3g" | "4g";
   downlink?: number;
   rtt?: number;
   saveData?: boolean;
@@ -32,7 +41,7 @@ export interface NetworkInfo {
 
 export const useNetworkInfo = (): NetworkInfo => {
   const [networkInfo, setNetworkInfo] = useState<NetworkInfo>({
-    isOnline: typeof navigator !== 'undefined' ? navigator.onLine : true,
+    isOnline: typeof navigator !== "undefined" ? navigator.onLine : true,
     isSupported: false,
     isCellular: false,
     isWiFi: false,
@@ -40,20 +49,24 @@ export const useNetworkInfo = (): NetworkInfo => {
   });
 
   useEffect(() => {
-    if (typeof navigator === 'undefined') return;
+    const nav = window.navigator as NavigatorWithConnection;
 
-    const nav = navigator as NavigatorWithConnection;
-    const connection = nav.connection || nav.mozConnection || nav.webkitConnection;
-    
+    if (typeof nav === "undefined") return;
+
+    const connection =
+      nav.connection || nav.mozConnection || nav.webkitConnection;
+
     if (!connection) {
-      setNetworkInfo(prev => ({ ...prev, isSupported: false }));
+      setNetworkInfo((prev) => ({ ...prev, isSupported: false }));
       return;
     }
 
     const updateNetworkInfo = () => {
-      const isCellular = connection.type === 'cellular';
-      const isWiFi = connection.type === 'wifi';
-      const isSlowConnection = connection.effectiveType === 'slow-2g' || connection.effectiveType === '2g';
+      const isCellular = connection.type === "cellular";
+      const isWiFi = connection.type === "wifi";
+      const isSlowConnection =
+        connection.effectiveType === "slow-2g" ||
+        connection.effectiveType === "2g";
 
       setNetworkInfo({
         type: connection.type,
@@ -61,7 +74,7 @@ export const useNetworkInfo = (): NetworkInfo => {
         downlink: connection.downlink,
         rtt: connection.rtt,
         saveData: connection.saveData,
-        isOnline: navigator.onLine,
+        isOnline: nav.onLine,
         isSupported: true,
         isCellular,
         isWiFi,
@@ -73,14 +86,14 @@ export const useNetworkInfo = (): NetworkInfo => {
     updateNetworkInfo();
 
     // Listen for changes
-    connection.addEventListener('change', updateNetworkInfo);
-    window.addEventListener('online', updateNetworkInfo);
-    window.addEventListener('offline', updateNetworkInfo);
+    connection.addEventListener("change", updateNetworkInfo);
+    window.addEventListener("online", updateNetworkInfo);
+    window.addEventListener("offline", updateNetworkInfo);
 
     return () => {
-      connection.removeEventListener('change', updateNetworkInfo);
-      window.removeEventListener('online', updateNetworkInfo);
-      window.removeEventListener('offline', updateNetworkInfo);
+      connection.removeEventListener("change", updateNetworkInfo);
+      window.removeEventListener("online", updateNetworkInfo);
+      window.removeEventListener("offline", updateNetworkInfo);
     };
   }, []);
 
