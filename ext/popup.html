@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>WiFi Guard</title>
+  <link rel="stylesheet" href="popup.css">
+</head>
+<body>
+  <div class="container">
+    <!-- Header -->
+    <div class="header">
+      <div class="logo">
+        <div class="logo-icon">
+          <svg class="icon" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m5-3V5a2 2 0 00-2-2H6a2 2 0 00-2 2v14l2-2h8a2 2 0 002-2v-2" />
+          </svg>
+        </div>
+        <div class="logo-text">
+          <h1>WiFi Guard</h1>
+          <p>Check suspicious networks like a cyber-security guard</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Main Content -->
+    <div class="main-content">
+      <!-- Scan Button -->
+      <div class="scan-section">
+        <button id="scanButton" class="scan-button">
+          <span class="scan-text">Start Security Scan</span>
+          <div class="loading-spinner hidden">
+            <div class="spinner"></div>
+            <span class="loading-text">Scanning Network...</span>
+          </div>
+        </button>
+        
+        <!-- Status Indicators -->
+        <div class="status-indicators">
+          <div class="status-legend">
+            <div class="status-item">
+              <div class="status-dot safe"></div>
+              <span>Safe</span>
+            </div>
+            <div class="status-item">
+              <div class="status-dot caution"></div>
+              <span>Caution</span>
+            </div>
+            <div class="status-item">
+              <div class="status-dot risk"></div>
+              <span>Risk</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Results Section (hidden initially) -->
+      <div id="resultsSection" class="results-section hidden">
+        <div id="overallResult" class="overall-result">
+          <div class="result-icon"></div>
+          <div class="result-content">
+            <h2 class="result-title"></h2>
+            <p class="result-message"></p>
+          </div>
+        </div>
+
+        <!-- Action Buttons -->
+        <div class="action-buttons">
+          <button id="showTipsButton" class="action-button tips-button">
+            Show Security Tips
+          </button>
+          <button id="showDetailsButton" class="action-button details-button">
+            Show Technical Details
+          </button>
+          <button id="scanAgainButton" class="action-button scan-again-button">
+            Scan Again
+          </button>
+        </div>
+      </div>
+
+      <!-- Tips Section (hidden initially) -->
+      <div id="tipsSection" class="expandable-section hidden">
+        <div class="section-header">
+          <div class="section-icon">
+            <svg class="icon" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+            </svg>
+          </div>
+          <h3>What should I do now?</h3>
+        </div>
+        <div id="tipsContent" class="section-content">
+          <!-- Tips will be populated by JavaScript -->
+        </div>
+      </div>
+
+      <!-- Details Section (hidden initially) -->
+      <div id="detailsSection" class="expandable-section hidden">
+        <h3 class="details-title">Security Check Details</h3>
+        <div id="checksDetails" class="checks-details">
+          <!-- Check details will be populated by JavaScript -->
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="popup.js"></script>
+</body>
+</html>
