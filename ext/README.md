@@ -1,117 +1,183 @@
-# WiFi Guard Chrome Extension
+# WiFi Guard React Extension
 
-A barebones Chrome extension for real-time WiFi security monitoring. This extension complements the web app by providing background security checks and browser-based network analysis.
+A modern Chrome extension built with React, TypeScript, and Tailwind CSS. This provides a much more familiar development experience similar to your Next.js web app.
 
 ## 🚀 Quick Start
 
 ### Development Setup
 
-1. Open Chrome and navigate to `chrome://extensions/`
-2. Enable "Developer mode" in the top right
-3. Click "Load unpacked" and select the `ext/` directory
-4. The extension should now appear in your extensions list
+1. **Install dependencies:**
+   ```bash
+   cd ext/
+   pnpm install
+   ```
 
-### Testing
+2. **Build the extension:**
+   ```bash
+   npm run build
+   # or for development with file watching:
+   npm run dev
+   ```
 
-1. Click the WiFi Guard icon in your browser toolbar
-2. Click "Start Security Scan" to test the basic functionality
-3. Check the browser console (F12) for debug information
+3. **Load in Chrome:**
+   - Open `chrome://extensions/`
+   - Enable "Developer mode"
+   - Click "Load unpacked" and select the `ext/dist/` folder
+   - The extension should now appear in your extensions list
+
+4. **Development workflow:**
+   - Run `npm run dev` to watch for changes
+   - Make changes to React components
+   - Reload the extension in Chrome when needed
 
 ## 📁 Structure
 
 ```
 ext/
-├── manifest.json     # Extension configuration
-├── popup.html        # Main popup UI
-├── popup.css         # Popup styling (mimics web app)
-├── popup.js          # Popup logic and UI interactions
-├── background.js     # Service worker for background tasks
-└── README.md         # This file
+├── src/
+│   ├── components/
+│   │   └── SecurityChecker.tsx    # Main React component
+│   ├── hooks/
+│   │   └── useExtensionMessage.ts # Chrome extension messaging hook
+│   ├── background.ts              # Service worker (TypeScript)
+│   ├── popup.tsx                  # React app entry point
+│   ├── popup.html                 # HTML template
+│   ├── styles.css                 # Tailwind CSS imports
+│   └── types.ts                   # TypeScript type definitions
+├── dist/                          # Built extension files (load this in Chrome)
+├── package.json                   # Dependencies and scripts
+├── vite.config.ts                 # Build configuration
+├── tailwind.config.js             # Tailwind CSS config
+└── tsconfig.json                  # TypeScript configuration
 ```
 
-## 🏗 Architecture
+## 🛠 Technology Stack
 
-### Manifest V3 Structure
-- **Service Worker**: `background.js` handles background tasks and message passing
-- **Popup**: `popup.html/css/js` provides the main user interface
-- **Permissions**: Minimal permissions for active tab and storage access
+### Frontend
+- **React 18** - Component-based UI
+- **TypeScript** - Type safety and better development experience  
+- **Tailwind CSS** - Utility-first CSS framework (matches web app)
+- **Heroicons** - Beautiful SVG icons
 
-### Key Components
+### Build Tools
+- **Vite** - Fast build tool and development server
+- **PostCSS** - CSS processing for Tailwind
 
-#### Background Script (`background.js`)
-- Handles security scan logic
-- Manages scan history storage
-- Communicates with popup via message passing
-- Placeholder implementations for actual network checks
+### Extension APIs
+- **Chrome Extension Manifest V3** - Latest extension format
+- **Chrome Storage API** - Persistent data storage
+- **Chrome Runtime API** - Message passing between components
 
-#### Popup Interface (`popup.html/css/js`)
-- Mimics the web app's dark theme and layout
-- Single-button scan interface
-- Expandable results, tips, and technical details
-- Responsive design optimized for extension popup
+## 🎨 React Components
 
-#### Security Checks
-Currently implements placeholder versions of:
-1. **HTTPS Detection**: Checks if current tab uses HTTPS
-2. **Network Analysis**: Placeholder for network property checks  
-3. **Certificate Validation**: Placeholder for SSL certificate checks
+### SecurityChecker
+The main component that handles:
+- Security scan UI and state management
+- Communication with background script via custom hook
+- Results display with expandable sections
+- Matches the web app's design exactly
 
-## 🎨 Design Philosophy
+### Custom Hooks
 
-### Web App Consistency
-- **Same Color Scheme**: Dark theme with blue accents
-- **Matching Layout**: Similar button styles and typography
-- **Consistent Language**: Same risk levels (Safe/Caution/Risk) and messaging
-- **Progressive Disclosure**: Expandable sections for tips and details
+#### useExtensionMessage
+Handles Chrome extension message passing:
+```tsx
+const { sendMessage, isConnected } = useExtensionMessage();
 
-### Extension-Specific Optimizations
-- **Compact Layout**: Fits standard extension popup dimensions (400px width)
-- **Fast Loading**: Minimal dependencies and optimized for quick startup
-- **Persistent State**: Remembers recent scans using Chrome storage APIs
+// Send message to background script
+const response = await sendMessage({ 
+  type: 'PERFORM_SECURITY_SCAN' 
+});
+```
 
-## 🔧 Development Notes
+## 🔧 Development Commands
 
-### Current Implementation Status
-- ✅ Basic UI structure and styling
-- ✅ Message passing between popup and background
-- ✅ Placeholder security checks
-- ✅ Scan history storage
-- ⏳ Real network security analysis (future)
-- ⏳ Background monitoring (future)
-- ⏳ Real-time notifications (future)
+```bash
+# Install dependencies
+npm install
 
-### Extension APIs Used
-- `chrome.runtime` - Message passing and extension lifecycle
-- `chrome.storage.local` - Scan history and settings storage
-- `chrome.tabs` - Current tab information for scanning
+# Development build with file watching
+npm run dev
 
-### Future Development Areas
-1. **Real Security Checks**: Implement actual network analysis
-2. **Background Monitoring**: Continuous security monitoring
-3. **Notifications**: Alert users to potential threats
-4. **Settings**: User preferences and configuration options
-5. **Icons**: Custom extension icons (currently using placeholder paths)
+# Production build  
+npm run build
+
+# Preview built files
+npm run preview
+```
+
+## 📝 Key Features vs Vanilla JavaScript
+
+### ✅ What's Better with React:
+- **Familiar Syntax**: Same JSX/TSX as your web app
+- **Component Architecture**: Reusable, maintainable components  
+- **State Management**: React hooks for clean state handling
+- **TypeScript**: Full type safety and IntelliSense
+- **Tailwind CSS**: Same utility classes as web app
+- **Hot Reload**: Fast development with `npm run dev`
+
+### 🎯 Development Experience:
+- Write components just like in Next.js
+- Use familiar hooks (`useState`, `useEffect`)
+- Import and use icons from Heroicons
+- Full TypeScript support with Chrome API types
+- Tailwind CSS classes work exactly the same
+
+## 🚧 Extension-Specific Considerations
+
+### Message Passing
+React components communicate with the background script:
+```tsx
+// In React component
+const response = await sendMessage({ type: 'PERFORM_SECURITY_SCAN' });
+
+// Background script responds
+chrome.runtime.onMessage.addListener((message, sender, sendResponse) => {
+  if (message.type === 'PERFORM_SECURITY_SCAN') {
+    // Handle scan...
+    sendResponse({ success: true, data: results });
+  }
+});
+```
+
+### State Persistence
+Chrome storage for persistent data:
+```tsx
+// Save scan results
+await chrome.storage.local.set({ scanHistory: results });
+
+// Load previous scans
+const { scanHistory } = await chrome.storage.local.get(['scanHistory']);
+```
+
+## 🎨 Styling Notes
+
+The extension uses the exact same color scheme and styling as your web app:
+- Dark theme (`bg-gray-900`)
+- Blue accents (`bg-blue-600`, `text-blue-400`)
+- Same button styles and animations
+- Consistent spacing and typography
+- Same status colors (green/amber/red)
 
 ## 🧪 Testing
 
-### Manual Testing
-1. Load the extension in developer mode
-2. Navigate to different websites (HTTP vs HTTPS)
-3. Test the scan functionality
-4. Verify results display correctly
-5. Check that scan history persists
+1. **Manual Testing:**
+   - Make changes to `src/components/SecurityChecker.tsx`
+   - Run `npm run dev` to rebuild
+   - Reload extension in Chrome
+   - Test functionality
 
-### Console Debugging
-- Background script logs: Check extension service worker console
-- Popup logs: Check popup developer tools (right-click popup → "Inspect")
+2. **Console Debugging:**
+   - Background script: Extension service worker console
+   - React components: Right-click popup → "Inspect"
 
-## 🚧 Known Limitations
+## 🚀 Next Steps
 
-1. **Placeholder Logic**: Security checks are currently simulated
-2. **No Icons**: Extension uses placeholder icon paths
-3. **Basic Networking**: Limited to browser security model constraints
-4. **No Persistence**: Popup state resets on close (by design)
+With this React setup, you can now:
+1. **Add new components** easily in `src/components/`
+2. **Share code** between web app and extension
+3. **Use familiar React patterns** like hooks and context
+4. **Leverage TypeScript** for better development experience
+5. **Style with Tailwind** just like your web app
 
-## 📝 Next Steps
-
-See `plan.md` for detailed development roadmap and feature planning.
+The development experience should now feel very similar to working on your Next.js web app!

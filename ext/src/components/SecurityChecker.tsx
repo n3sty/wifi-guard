@@ -1,6 +1,6 @@
 import { useState, useEffect } from 'react';
-import { SecurityCheck, ScanResponse } from '@/types';
-import { useExtensionMessage } from '@/hooks/useExtensionMessage';
+import { SecurityCheck, ScanResponse } from '../types';
+import { useExtensionMessage } from '../hooks/useExtensionMessage';
 import { CheckIcon, ExclamationTriangleIcon, ShieldExclamationIcon } from '@heroicons/react/24/solid';
 
 export default function SecurityChecker() {

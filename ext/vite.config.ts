@@ -7,8 +7,8 @@ export default defineConfig({
     outDir: 'dist',
     rollupOptions: {
       input: {
-        popup: import.meta.resolve('src/popup.html'),
-        background: import.meta.resolve('src/background.ts'),
+        popup: './popup.html',
+        background: './src/background.ts',
       },
       output: {
         entryFileNames: '[name].js',
@@ -19,9 +19,10 @@ export default defineConfig({
     target: 'es2017',
     minify: false, // Keep readable for debugging
   },
+  base: './',
   resolve: {
     alias: {
-      '@': import.meta.resolve('./src'),
+      '@': './src',
     },
   },
 })

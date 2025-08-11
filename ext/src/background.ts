@@ -19,7 +19,7 @@ chrome.runtime.onInstalled.addListener((details) => {
 });
 
 // Handle messages from popup and content scripts
-chrome.runtime.onMessage.addListener((message, sender, sendResponse) => {
+chrome.runtime.onMessage.addListener((message, _, sendResponse) => {
   console.log('Background received message:', message);
   
   switch (message.type) {

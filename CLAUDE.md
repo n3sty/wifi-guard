@@ -78,7 +78,7 @@ Results are classified as Safe 🟢 / Caution 🟡 / Risk 🔴 with educational 
 The extension follows a **message-passing architecture** between popup and background script:
 
 ```
-┌─────────────────┐    Messages    ┌──────────────────┐
+┌─────────────────┐    Messages     ┌──────────────────┐
 │  Popup (React)  │ ──────────────→ │ Background Script│
 │                 │                 │ (Service Worker) │
 │ SecurityChecker │ ←────────────── │                  │
